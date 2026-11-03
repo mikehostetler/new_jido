@@ -16,9 +16,15 @@
   "id": "jido-07x.5",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completion report:\n- Changed files: mix.exs; test/test_helper.exs; test/property/action_flow/README.md; test/property/action_flow/expression/expression_contract_test.exs; test/property/action_flow/report_test.exs; test/property/action_flow/support/{check_report,fuzz,report}.exs; test/property/signal/support/report.exs; test/contracts/coverage.json; test/quality/source_manifest.yml.\n- Manifest: marked refs/jido_action test/property ported at 40ec1f0af3a373bae5e6d869017cc229c85aef92; recorded unused authoring, managed, and runtime property support as excluded with current owners.\n- Verification: mix test.property test/property/action_flow (19 passed, 1 excluded, seed 0); mix test.fuzz test/property/action_flow (1 passed, 19 excluded, seed 0, full report gate passed); final report recorded expression_trees passed with 1,000 generated inputs and 1 replay; mix test.property (54 passed); mix test.fuzz (12 passed, both Signal and Action full-report gates passed); mix test test/quality/source_manifest_test.exs (6 passed); mix test.contracts (3296 passed, 146 excluded, 323/323 active obligations); mix format --check-formatted; mix reach.check --arch --smells (architecture OK, existing 276-smell inventory only); git diff --check.\n- Deferred assets: none.\n- Deviations: renamed support to JidoTest.Property.ActionFlow; used the current public Jido.Expr.Operation return shape instead of the old Jido.Expr struct check; changed generic report fixture IDs from ACT-* to the current EXPR-* contracts; isolated the Action and Flow report artifacts and added selection-aware full-report checks for Signal and Action; excluded three source support files that the active expression suite does not load.\n- Remaining blockers: none.\n- Scope: no lib changes and no refs changes. refs/jido_action remained clean at the required commit.\n- Commit: 4afad1a.",
+      "timestamp": "2026-11-03T21:56:44Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port Action and Flow property checks",
   "type": "task",
-  "updated_at": "2026-11-03T21:46:11Z"
+  "updated_at": "2026-11-03T21:56:44Z"
 }
