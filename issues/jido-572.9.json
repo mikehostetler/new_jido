@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.8"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:52:56Z",
   "description": "After agent_domain is stable, review AgentServer slices, Instance, Persistence, Signal delivery, and runtime Telemetry. Use process and failure ownership to define the slice boundaries.",
