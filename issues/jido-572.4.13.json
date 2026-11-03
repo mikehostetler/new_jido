@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.4.10"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:52:56Z",
   "description": "After Jido.Joi is stable, run elixir-architecture-review on the pure Jido.Trace value only. Do not include process context or runtime telemetry. Check W3C data rules, Joi use, API depth, and duplicate representations.",

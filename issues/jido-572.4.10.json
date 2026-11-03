@@ -4,7 +4,8 @@
     "jido-572.4.9"
   ],
   "blocks": [
-    "jido-572.4.11"
+    "jido-572.4.11",
+    "jido-572.4.13"
   ],
   "created": "2026-11-03T16:52:56Z",
   "description": "Apply the accepted Jido.Joi review decisions. Keep domain schemas outside this slice. Update Reach, the jido.joi Covenant component, tests, and the living map. Remove forwarding or duplicate validation code where proof permits. Record code removed and run all slice gates.",
