@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.4.3"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:52:55Z",
   "description": "Apply the accepted Jido.Error review decisions. Remove only duplicate error policy. Keep domain source-path and recovery policy with their domain owners. Update Reach, jido.error Covenant proof, tests, and the living map. Record code removed and run all slice gates.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Apply the Jido.Error reduction",
   "type": "task",
-  "updated_at": "2026-11-03T16:52:55Z"
+  "updated_at": "2026-11-03T16:52:56Z"
 }
