@@ -1,2 +1,3 @@
 prefix=jido
 version=2
+workflow.review=pr
