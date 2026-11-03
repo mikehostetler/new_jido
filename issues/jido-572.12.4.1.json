@@ -1,7 +1,9 @@
 {
   "assignee": "",
   "blocked_by": [],
-  "blocks": [],
+  "blocks": [
+    "jido-572.12.4.4"
+  ],
   "created": "2026-11-03T16:54:16Z",
   "description": "Port and update the useful examples and tests from refs/jido_action/examples and refs/jido_action/test/examples. Cover compilation, execution shapes, waits, controlled execution, failure, durability, recovery, and distribution. Merge duplicate scenarios.",
   "id": "jido-572.12.4.1",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Port Action, Flow, execution, and durability examples",
   "type": "task",
-  "updated_at": "2026-11-03T16:54:16Z"
+  "updated_at": "2026-11-03T16:54:17Z"
 }
