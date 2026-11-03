@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:52:55Z",
+  "description": "Add a project check that reads .reach.exs and all Covenant obligation records. Report missing modules, modules that match zero or many layers, cross-layer component ownership, duplicate primary owners, and unknown modules. Show the component, module, and resolved layer.",
+  "id": "jido-572.2.1",
+  "labels": [],
+  "parent": "jido-572.2",
+  "priority": 0,
+  "status": "open",
+  "title": "Add the Reach-to-Covenant ownership report",
+  "type": "task",
+  "updated_at": "2026-11-03T16:52:55Z"
+}
