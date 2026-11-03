@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:52:56Z",
+  "description": "Run elixir-architecture-review on Jido.Codec.Term only. Do not implement changes. Check portable BEAM term policy, format ownership, API depth, test proof, and overlap with document or domain codecs.",
+  "id": "jido-572.4.7",
+  "labels": [],
+  "parent": "jido-572.4",
+  "priority": 1,
+  "status": "open",
+  "title": "Review the Jido.Codec.Term primitive",
+  "type": "task",
+  "updated_at": "2026-11-03T16:52:56Z"
+}
