@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.1.2"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:52:55Z",
   "description": "Update .reach.exs so every production module matches one layer and all cross-layer namespaces use explicit patterns. Keep Reach as the only source for layer assignment. Run mix reach.check --arch --smells and the xref cycle checks.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Encode the formal namespace boundaries in Reach",
   "type": "task",
-  "updated_at": "2026-11-03T16:52:55Z"
+  "updated_at": "2026-11-03T16:52:56Z"
 }
