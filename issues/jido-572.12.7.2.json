@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:54:17Z",
+  "description": "Port the maintained Signal benchmark cases for Signal values, selectors, routing, Bus operations, replay, retention, and wire boundaries. Select one reviewed baseline. Do not import the full optimization history.",
+  "id": "jido-572.12.7.2",
+  "labels": [],
+  "parent": "jido-572.12.7",
+  "priority": 1,
+  "status": "open",
+  "title": "Port Signal benchmarks",
+  "type": "task",
+  "updated_at": "2026-11-03T16:54:17Z"
+}
