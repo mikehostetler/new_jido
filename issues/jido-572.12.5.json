@@ -9,7 +9,10 @@
   "created": "2026-11-03T16:54:16Z",
   "description": "Restore model-based, generative, and saved-regression tests from the reference packages. Use deterministic seeds and keep a small reviewed regression corpus. Do not change jido/lib.",
   "id": "jido-572.12.5",
-  "labels": [],
+  "labels": [
+    "property",
+    "quality"
+  ],
   "parent": "jido-572.12",
   "priority": 0,
   "status": "open",
