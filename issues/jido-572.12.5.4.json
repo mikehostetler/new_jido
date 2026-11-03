@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:54:16Z",
+  "description": "Add separate property and fuzz aliases. Property tests must fit the normal quality budget. Fuzz tests must have an explicit case or time budget and must write a reviewable failure artifact.",
+  "id": "jido-572.12.5.4",
+  "labels": [],
+  "parent": "jido-572.12.5",
+  "priority": 1,
+  "status": "open",
+  "title": "Add deterministic property and fuzz gates",
+  "type": "task",
+  "updated_at": "2026-11-03T16:54:16Z"
+}
