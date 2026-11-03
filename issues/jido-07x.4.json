@@ -11,9 +11,15 @@
   "id": "jido-07x.4",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completion report:\n- Changed files: bench/signal/run.exs; bench/signal/support/*.exs; test/bench/signal/*.exs; test/quality/source_manifest.yml.\n- Manifest: marked test/bench and bench ported; recorded bench/results and bench/compare.exs as excluded historical assets.\n- Verification: mix test.bench test/bench/signal (15 passed, seed 0); mix run bench/signal/run.exs --profile smoke (150 cases, valid JSON and Markdown reports, all owned_remaining values are 0); mix format --check-formatted; mix reach.check --arch --smells (architecture OK, existing smell inventory only); mix test test/quality/source_manifest_test.exs (6 passed); git diff --check.\n- Deferred assets: none.\n- Deviations: adapted old package owners to current public Jido owners; removed timing and memory pass thresholds as required by the plan; adapted Trace.child result validation for current parent_span_id behavior.\n- Remaining blockers: none.\n- Scope: no lib changes and no refs changes.\n- Commit: c5f30e9.",
+      "timestamp": "2026-11-03T21:45:39Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port Signal benchmark smoke checks",
   "type": "task",
-  "updated_at": "2026-11-03T21:38:50Z"
+  "updated_at": "2026-11-03T21:45:39Z"
 }
