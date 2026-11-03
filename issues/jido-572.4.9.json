@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:52:56Z",
+  "description": "Run elixir-architecture-review on the Jido.Joi namespace only. Do not implement changes. Check the Zoi facade, static data validation, struct projection, schema helpers, API depth, contract ownership, and duplicate validation policy.",
+  "id": "jido-572.4.9",
+  "labels": [],
+  "parent": "jido-572.4",
+  "priority": 1,
+  "status": "open",
+  "title": "Review the Jido.Joi primitive",
+  "type": "task",
+  "updated_at": "2026-11-03T16:52:56Z"
+}
