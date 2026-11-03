@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T21:18:37Z",
+  "description": "## Goal\n\nImport the useful authoring, example, property, fuzz, system, load, live, and benchmark checks from the four source packages into the consolidated Jido project.\n\nPlan: \n\n## Global non-goals\n\n- Do not change .\n- Do not change .\n- Do not import historical benchmark result trees.\n- Do not put provider or external service checks in the required pull request gate.\n\n## Definition of done\n\n- Every reviewed asset has an exact source commit and disposition.\n- All focused offline suites pass.\n- Required CI runs every offline suite, Covenant, and Reach.\n- Live and service suites are explicit and documented.",
+  "id": "jido-07x",
+  "labels": [],
+  "priority": 1,
+  "status": "open",
+  "title": "Import consolidated quality backpressure",
+  "type": "epic",
+  "updated_at": "2026-11-03T21:18:37Z"
+}
