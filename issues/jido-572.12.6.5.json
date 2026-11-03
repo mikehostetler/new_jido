@@ -1,7 +1,8 @@
 {
   "assignee": "",
   "blocked_by": [
-    "jido-572.12.6.1"
+    "jido-572.12.6.1",
+    "jido-572.12.6.2"
   ],
   "blocks": [],
   "created": "2026-11-03T16:54:17Z",
