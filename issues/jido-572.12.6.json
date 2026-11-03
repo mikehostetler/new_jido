@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.12.2"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:54:16Z",
   "description": "Restore local load, fault, recovery, supervision, peer, and service tests. Separate deterministic local gates from tests that need external services. Do not change jido/lib.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Port load and system backpressure",
   "type": "epic",
-  "updated_at": "2026-11-03T16:54:16Z"
+  "updated_at": "2026-11-03T16:54:17Z"
 }
