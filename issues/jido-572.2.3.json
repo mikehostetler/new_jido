@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.2.2"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:52:55Z",
   "description": "For one namespace slice, move obligations, decisions, survivor records, test tags, references, and mutation scope together. A component can use lower layers but cannot own them. Require one primary Covenant owner for each owned module.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Define the per-slice Covenant migration rule",
   "type": "task",
-  "updated_at": "2026-11-03T16:52:55Z"
+  "updated_at": "2026-11-03T16:52:56Z"
 }
