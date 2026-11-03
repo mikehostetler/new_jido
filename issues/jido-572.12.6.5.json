@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.12.6.1"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:54:17Z",
   "description": "Add separate deterministic aliases and reporting for local system tests, bounded load tests, optional services, and long burn-in. Record timeouts and resource budgets. The default test alias must stay fast.",

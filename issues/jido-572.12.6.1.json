@@ -1,7 +1,9 @@
 {
   "assignee": "",
   "blocked_by": [],
-  "blocks": [],
+  "blocks": [
+    "jido-572.12.6.5"
+  ],
   "created": "2026-11-03T16:54:17Z",
   "description": "Port refs/jido_action/test/load and test/system. Adapt the Exec load test and system scenario to the consolidated runtime. Keep run time bounded in CI and keep burn-in as an explicit local command.",
   "id": "jido-572.12.6.1",
