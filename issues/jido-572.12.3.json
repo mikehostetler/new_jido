@@ -9,11 +9,14 @@
   "created": "2026-11-03T16:54:16Z",
   "description": "Restore authoring backpressure for Agent, Plugin, Action, Flow, and AI authoring. Adapt the reference tests to the consolidated namespaces and current public APIs. Do not change jido/lib.",
   "id": "jido-572.12.3",
-  "labels": [],
+  "labels": [
+    "authoring",
+    "quality"
+  ],
   "parent": "jido-572.12",
   "priority": 0,
   "status": "open",
   "title": "Port the authoring conformance corpus",
   "type": "epic",
-  "updated_at": "2026-11-03T16:54:17Z"
+  "updated_at": "2026-11-03T16:54:18Z"
 }
