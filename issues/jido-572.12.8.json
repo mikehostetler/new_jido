@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:54:17Z",
+  "description": "Define which suites run on each pull request, on a scheduled job, and by explicit local command. Add time and resource budgets. Document source baselines, retained scenarios, skipped external tests, and follow-up production gaps. Confirm that jido/lib did not change in this foundation epic.",
+  "id": "jido-572.12.8",
+  "labels": [],
+  "parent": "jido-572.12",
+  "priority": 0,
+  "status": "open",
+  "title": "Add the quality backpressure matrix and documentation",
+  "type": "task",
+  "updated_at": "2026-11-03T16:54:17Z"
+}
