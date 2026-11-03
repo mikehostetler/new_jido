@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:52:56Z",
+  "description": "Apply the accepted pure Jido.Trace review decisions. Keep runtime context in its live-runtime owner. Update Reach, the jido.trace Covenant component, tests, and the living map. Record code removed and run all slice gates.",
+  "id": "jido-572.4.14",
+  "labels": [],
+  "parent": "jido-572.4",
+  "priority": 1,
+  "status": "open",
+  "title": "Apply the Jido.Trace reduction",
+  "type": "task",
+  "updated_at": "2026-11-03T16:52:56Z"
+}
