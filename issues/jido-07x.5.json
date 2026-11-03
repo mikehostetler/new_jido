@@ -6,6 +6,7 @@
   ],
   "blocks": [
     "jido-07x.10",
+    "jido-07x.12",
     "jido-07x.6",
     "jido-07x.7",
     "jido-07x.8"
@@ -19,5 +20,5 @@
   "status": "open",
   "title": "Port Action and Flow property checks",
   "type": "task",
-  "updated_at": "2026-11-03T21:18:38Z"
+  "updated_at": "2026-11-03T21:18:39Z"
 }
