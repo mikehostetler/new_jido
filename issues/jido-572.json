@@ -5,10 +5,13 @@
   "created": "2026-11-03T16:52:55Z",
   "description": "Formalize namespace boundaries, align Reach with Covenant ownership, and review each layer from the zero-dependency primitives to application composition. The goal is a smaller library with clear owners, one-way dependencies, and contract proof.",
   "id": "jido-572",
-  "labels": [],
+  "labels": [
+    "architecture",
+    "quality"
+  ],
   "priority": 0,
   "status": "open",
   "title": "Improve Jido architecture quality after consolidation",
   "type": "epic",
-  "updated_at": "2026-11-03T16:52:55Z"
+  "updated_at": "2026-11-03T16:52:56Z"
 }
