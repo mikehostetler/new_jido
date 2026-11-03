@@ -13,9 +13,15 @@
   "id": "jido-07x.3",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed 32d5e56. Added test/property/signal with 13 active test files and 5 support files, test/property/corpus/signal with all 5 reviewed regression inputs, the preserved deferred diagnostics test, report activation in test/test_helper.exs, support ignore configuration in mix.exs, and manifest updates. Manifest records: jido_signal test/property is ported for 11 active bounded case groups; test/property/corpus is ported; test/property/diagnostics_test.exs is deferred under owner jido.error. Verification passed: mix test.property test/property/signal (35 passed, 11 fuzz variants excluded, seed 0); mix test.fuzz test/property/signal (11 passed, 35 property/support tests excluded, seed 0); both reports finished passed with all 11 required case measurements and no missing contract evidence; mix format --check-formatted; mix reach.check --arch --smells; manifest test (6 passed). Deferred asset: diagnostics keeps the source byte bound unchanged. Exact failing command: mix test test/quality/deferred/signal/diagnostics_test.exs --only property --seed 0. It fails with byte_size 1038 greater than source maximum 1027. Deviation: consolidated API ownership was adapted to Jido.Signal.Codec, Jido.Signal.Context, Jido.Id, Jido.Trace, Jido.Error, and Jido.Signal.Boundary. Remaining blocker: a later product ticket must resolve the diagnostics bound before activation. No lib or refs files changed.",
+      "timestamp": "2026-11-03T21:38:27Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port Signal property and fuzz checks",
   "type": "task",
-  "updated_at": "2026-11-03T21:31:11Z"
+  "updated_at": "2026-11-03T21:38:27Z"
 }
