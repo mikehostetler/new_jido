@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:54:16Z",
+  "description": "Port the current examples from refs/jido_ai/examples. Add executable smoke tests where the reference has an example without a test. Keep model calls deterministic through fakes. Do not require live credentials or network access.",
+  "id": "jido-572.12.4.3",
+  "labels": [],
+  "parent": "jido-572.12.4",
+  "priority": 1,
+  "status": "open",
+  "title": "Port AI and conversation examples",
+  "type": "task",
+  "updated_at": "2026-11-03T16:54:16Z"
+}
