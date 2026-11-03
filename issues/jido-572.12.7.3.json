@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:54:17Z",
+  "description": "Port compile, run, graph-shape, telemetry, and stress benchmarks from refs/jido_action. Update them for the current public API and Runic version. Keep performance assertions out of normal unit tests.",
+  "id": "jido-572.12.7.3",
+  "labels": [],
+  "parent": "jido-572.12.7",
+  "priority": 1,
+  "status": "open",
+  "title": "Port Action, Flow, and Exec benchmarks",
+  "type": "task",
+  "updated_at": "2026-11-03T16:54:17Z"
+}
