@@ -11,9 +11,15 @@
   "id": "jido-07x.1",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed efd9315. Changed .formatter.exs, mix.exs, test/test_helper.exs, docs/plans/2026-11-03-1512-consolidated-quality-backpressure-plan.md, and test/quality/{README.md,source_manifest.yml,source_manifest_test.exs}. Manifest records: 35 source-suite roots across jido_signal, jido_action, jido_v3_split, and jido_ai; one existing authoring corpus is ported, core LLM assets are superseded, research/proposed and broad legacy core benchmark assets are excluded, and remaining planned imports are deferred to their registered tickets. Verification passed: mix test test/quality/source_manifest_test.exs (6 passed); mix format --check-formatted; empty-safe mix test.property. Deferred assets require later tickets only; no product-gap failure occurred. Deviation: none. Remaining blockers: none for this ticket. No lib or refs files changed.",
+      "timestamp": "2026-11-03T21:26:28Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Establish the quality source manifest and runners",
   "type": "task",
-  "updated_at": "2026-11-03T21:22:42Z"
+  "updated_at": "2026-11-03T21:26:28Z"
 }
