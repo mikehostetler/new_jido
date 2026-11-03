@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.2.1"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:52:55Z",
   "description": "Record the current cross-layer owners, duplicate owners, legacy IDs, and stable contract gaps. Keep known debt explicit. Add a non-regression gate that rejects new debt. Remove each exception in the namespace slice that owns it.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Baseline Covenant alignment debt and prevent regressions",
   "type": "task",
-  "updated_at": "2026-11-03T16:52:55Z"
+  "updated_at": "2026-11-03T16:52:56Z"
 }
