@@ -3,7 +3,9 @@
   "blocked_by": [
     "jido-572.4.10"
   ],
-  "blocks": [],
+  "blocks": [
+    "jido-572.4.12"
+  ],
   "created": "2026-11-03T16:52:56Z",
   "description": "After Jido.Joi is stable, run elixir-architecture-review on Jido.Codec.Compiler only. Do not implement changes. Check compile-time JSON codec generation, Joi use, macro API depth, and overlap with domain codecs.",
   "id": "jido-572.4.11",
