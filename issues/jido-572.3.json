@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.2"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:52:55Z",
   "description": "Update the existing skill so it can review one named namespace slice. Its output must cover responsibility, direct dependencies, functional data boundaries, OTP ownership, public API depth, Covenant ownership, test proof, and Keep, Move, Merge, or Remove findings. It must produce a reduction handoff with risk and expected code removal.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Adapt elixir-architecture-review for focused reduction slices",
   "type": "task",
-  "updated_at": "2026-11-03T16:52:55Z"
+  "updated_at": "2026-11-03T16:52:56Z"
 }
