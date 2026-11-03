@@ -1,7 +1,9 @@
 {
   "assignee": "",
   "blocked_by": [],
-  "blocks": [],
+  "blocks": [
+    "jido-572.12.6.5"
+  ],
   "created": "2026-11-03T16:54:17Z",
   "description": "Port the useful Postgres, Redis, MinIO or S3, and Bedrock service tests from refs/jido_v3_split. Provide explicit service aliases and setup notes. Do not require these services for normal CI unless a dedicated job supplies them.",
   "id": "jido-572.12.6.4",
