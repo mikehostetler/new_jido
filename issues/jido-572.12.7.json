@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.12.2"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:54:17Z",
   "description": "Port benchmark code and a small baseline set from all reference packages. Do not copy complete historical result trees. Benchmarks must measure a named contract and produce comparable machine-readable output. Do not change jido/lib.",

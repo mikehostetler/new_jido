@@ -7,7 +7,8 @@
     "jido-572.12.3",
     "jido-572.12.4",
     "jido-572.12.5",
-    "jido-572.12.6"
+    "jido-572.12.6",
+    "jido-572.12.7"
   ],
   "created": "2026-11-03T16:54:16Z",
   "description": "Port the useful test tags, test-helper loading rules, reporting helpers, and Mix aliases for authoring, examples, property, fuzz, system, load, services, and benchmarks. Keep slow and external tests out of the default unit suite. Do not change jido/lib.",
