@@ -6,6 +6,7 @@
   "blocks": [
     "jido-07x.7"
   ],
+  "closed_at": "2026-11-03T21:45:41Z",
   "created": "2026-11-03T21:18:37Z",
   "description": "## Objective\n\nRestore Signal benchmark correctness and the manual Signal benchmark runner.\n\n## Context\n\nPlan: `docs/plans/2026-11-03-1512-consolidated-quality-backpressure-plan.md`\nUnit: `U4`\nCovers: `R1, R2, R7; KTD1, KTD2, KTD4.`\n\nImplement only this quality-import unit. Follow the plan decisions. Do not change `lib/**` or `../refs/**`. When a source assertion needs a product change, record the asset as deferred with the failing command.\n\n## Dependencies\n\n- Blocked by: jido-07x.1 (U1) — Establish the quality source manifest and runners must be complete.\n- Unblocks: jido-07x.7 (U7) — Port Action and Flow benchmark smoke checks must be complete.\n\n## Files\n\nRead `../refs/jido_signal/test/bench/**` and `../refs/jido_signal/bench/**` at the Signal baseline. Add `test/bench/signal/**` and `bench/signal/**`. Exclude `../refs/jido_signal/bench/results/**`. Change the manifest.\n\n## Instructions\n\n1. Port the three correctness tests and benchmark support code.\n2. Write new reports only under ignored `tmp/bench/signal/`.\n3. Keep result validation and environment metadata.\n4. Remove timing and memory pass thresholds.\n\n## Acceptance criteria\n\n- [ ] Smoke tests validate results and cleanup before measurement.\n- [ ] No historical result file is copied.\n- [ ] The manual runner needs no network or service.\n\n## Verification\n\n- `mix test.bench test/bench/signal` and `mix run bench/signal/run.exs --profile smoke` exit with status `0`.\n\n## Handoff\n\nIn the Beadwork completion comment, list changed files, source manifest records, verification results, deferred assets, deviations from the plan, and remaining blockers.",
   "id": "jido-07x.4",
@@ -18,8 +19,8 @@
     }
   ],
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Port Signal benchmark smoke checks",
   "type": "task",
-  "updated_at": "2026-11-03T21:45:39Z"
+  "updated_at": "2026-11-03T21:45:41Z"
 }
