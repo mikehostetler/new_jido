@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:54:16Z",
+  "description": "Restore local load, fault, recovery, supervision, peer, and service tests. Separate deterministic local gates from tests that need external services. Do not change jido/lib.",
+  "id": "jido-572.12.6",
+  "labels": [],
+  "parent": "jido-572.12",
+  "priority": 0,
+  "status": "open",
+  "title": "Port load and system backpressure",
+  "type": "epic",
+  "updated_at": "2026-11-03T16:54:16Z"
+}
