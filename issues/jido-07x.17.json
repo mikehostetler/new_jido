@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-07x.16"
+  ],
   "blocks": [],
   "created": "2026-11-03T21:18:37Z",
   "description": "## Objective\n\nRestore safe Redis, PostgreSQL, MinIO, and Bedrock service checks.\n\n## Context\n\nPlan: \nUnit: \nCovers: \n\nImplement only this quality-import unit. Follow the plan decisions. Do not change  or . When a source assertion needs a product change, record the asset as deferred with the failing command.\n\n## Dependencies\n\n- Blocked by: jido-07x.16 (U16) — Port core property, system, and peer checks must be complete.\n- Unblocks: jido-07x.20 (U20) — Enforce quality gates in CI and agent guidance must be complete.\n\n## Files\n\nRead split core `test/system/services/**` at the core baseline. Add `test/system/services/**` and its README. Change only test dependencies that are required by selected services. Change the manifest. Do not change `lib/**`.\n\n## Instructions\n\n1. Port each service family under the `:service` tag.\n2. Use ephemeral services and test-only credentials.\n3. List exact prerequisites and commands.\n4. Defer a service when its required client is not part of the consolidated project.\n\n## Acceptance criteria\n\n- [ ] Service checks do not run under `mix test`, `mix test.ci`, or `mix test.all`.\n- [ ] Setup does not use ambient production services or credentials.\n- [ ] Every service family has a manifest disposition.\n\n## Verification\n\n- Each documented `mix test.services` command exits with status `0` in its declared test environment.\n\n## Handoff\n\nIn the Beadwork completion comment, list changed files, source manifest records, verification results, deferred assets, deviations from the plan, and remaining blockers.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Port opt-in external service checks",
   "type": "task",
-  "updated_at": "2026-11-03T21:18:38Z"
+  "updated_at": "2026-11-03T21:18:39Z"
 }
