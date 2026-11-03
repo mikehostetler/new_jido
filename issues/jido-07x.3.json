@@ -4,6 +4,7 @@
     "jido-07x.1"
   ],
   "blocks": [
+    "jido-07x.13",
     "jido-07x.5"
   ],
   "created": "2026-11-03T21:18:37Z",
@@ -15,5 +16,5 @@
   "status": "open",
   "title": "Port Signal property and fuzz checks",
   "type": "task",
-  "updated_at": "2026-11-03T21:18:38Z"
+  "updated_at": "2026-11-03T21:18:39Z"
 }
