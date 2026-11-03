@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:52:56Z",
+  "description": "After agent_domain is stable, review AgentServer slices, Instance, Persistence, Signal delivery, and runtime Telemetry. Use process and failure ownership to define the slice boundaries.",
+  "id": "jido-572.9",
+  "labels": [],
+  "parent": "jido-572",
+  "priority": 1,
+  "status": "open",
+  "title": "Review and reduce the live_runtime layer",
+  "type": "epic",
+  "updated_at": "2026-11-03T16:52:56Z"
+}
