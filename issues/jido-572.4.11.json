@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:52:56Z",
+  "description": "After Jido.Joi is stable, run elixir-architecture-review on Jido.Codec.Compiler only. Do not implement changes. Check compile-time JSON codec generation, Joi use, macro API depth, and overlap with domain codecs.",
+  "id": "jido-572.4.11",
+  "labels": [],
+  "parent": "jido-572.4",
+  "priority": 1,
+  "status": "open",
+  "title": "Review the Jido.Codec.Compiler primitive",
+  "type": "task",
+  "updated_at": "2026-11-03T16:52:56Z"
+}
