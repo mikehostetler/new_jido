@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:54:16Z",
+  "description": "Build a source-to-target manifest for refs/jido_action, refs/jido_signal, refs/jido_v3_split, and refs/jido_ai at the pinned baselines. Classify each authoring test, example, property test, load or system test, and benchmark as port, adapt, merge, replace, historical result, or stale. Do not copy generated files, dependency trees, or complete historical benchmark result trees.",
+  "id": "jido-572.12.1",
+  "labels": [],
+  "parent": "jido-572.12",
+  "priority": 0,
+  "status": "open",
+  "title": "Catalog reference quality assets and choose their target homes",
+  "type": "task",
+  "updated_at": "2026-11-03T16:54:16Z"
+}
