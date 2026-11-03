@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:54:16Z",
+  "description": "Port useful state, contract-intersection, authoring, lifecycle, and pre-commit regression properties from refs/jido_v3_split. Keep deterministic seeds and bounded case counts for CI.",
+  "id": "jido-572.12.5.3",
+  "labels": [],
+  "parent": "jido-572.12.5",
+  "priority": 0,
+  "status": "open",
+  "title": "Port Agent and runtime property tests",
+  "type": "task",
+  "updated_at": "2026-11-03T16:54:16Z"
+}
