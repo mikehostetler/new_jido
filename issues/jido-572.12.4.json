@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.12.2"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:54:16Z",
   "description": "Port examples as executable tests. Prefer a smaller set of strong examples over duplicate package-era examples. Each retained example must compile and run against the consolidated public API. Do not change jido/lib.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Build the executable consolidated example corpus",
   "type": "epic",
-  "updated_at": "2026-11-03T16:54:16Z"
+  "updated_at": "2026-11-03T16:54:17Z"
 }
