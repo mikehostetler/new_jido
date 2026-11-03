@@ -3,7 +3,9 @@
   "blocked_by": [
     "jido-572.6"
   ],
-  "blocks": [],
+  "blocks": [
+    "jido-572.8"
+  ],
   "created": "2026-11-03T16:52:56Z",
   "description": "After definitions are stable, review execution and the Action execution boundary as separate slices. Keep execution free of Agent commit and live runtime ownership.",
   "id": "jido-572.7",
