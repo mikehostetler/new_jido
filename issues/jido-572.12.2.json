@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.12.1"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:54:16Z",
   "description": "Port the useful test tags, test-helper loading rules, reporting helpers, and Mix aliases for authoring, examples, property, fuzz, system, load, services, and benchmarks. Keep slow and external tests out of the default unit suite. Do not change jido/lib.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Create the consolidated quality test harness",
   "type": "task",
-  "updated_at": "2026-11-03T16:54:16Z"
+  "updated_at": "2026-11-03T16:54:17Z"
 }
