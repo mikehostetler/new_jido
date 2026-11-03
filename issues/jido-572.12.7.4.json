@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:54:17Z",
+  "description": "Port the useful AgentServer admission, authoring, Codec, data, edge, persistence, Plugin, and runtime cases from refs/jido_v3_split. Separate throughput, latency, allocation, and memory measurements.",
+  "id": "jido-572.12.7.4",
+  "labels": [],
+  "parent": "jido-572.12.7",
+  "priority": 1,
+  "status": "open",
+  "title": "Port core runtime benchmarks",
+  "type": "task",
+  "updated_at": "2026-11-03T16:54:17Z"
+}
