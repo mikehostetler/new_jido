@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.12.2"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:54:16Z",
   "description": "Restore authoring backpressure for Agent, Plugin, Action, Flow, and AI authoring. Adapt the reference tests to the consolidated namespaces and current public APIs. Do not change jido/lib.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Port the authoring conformance corpus",
   "type": "epic",
-  "updated_at": "2026-11-03T16:54:16Z"
+  "updated_at": "2026-11-03T16:54:17Z"
 }
