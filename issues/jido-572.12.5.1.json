@@ -1,7 +1,9 @@
 {
   "assignee": "",
   "blocked_by": [],
-  "blocks": [],
+  "blocks": [
+    "jido-572.12.5.4"
+  ],
   "created": "2026-11-03T16:54:16Z",
   "description": "Port the useful property tests from refs/jido_signal for envelopes, diagnostics, routing, dispatch, Bus histories, durable store faults, PID lifecycle, trace IDs, and wire mutation. Keep reviewed corpus cases that still match the current contract.",
   "id": "jido-572.12.5.1",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Port Signal property and regression tests",
   "type": "task",
-  "updated_at": "2026-11-03T16:54:16Z"
+  "updated_at": "2026-11-03T16:54:17Z"
 }
