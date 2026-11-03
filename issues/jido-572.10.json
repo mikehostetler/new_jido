@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.9"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:52:56Z",
   "description": "After live_runtime is stable, review AI and each bundled Plugin capability as separate consumers of the lower contracts. Core layers must not depend on a capability.",
