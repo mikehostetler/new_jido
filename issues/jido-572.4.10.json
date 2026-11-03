@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:52:56Z",
+  "description": "Apply the accepted Jido.Joi review decisions. Keep domain schemas outside this slice. Update Reach, the jido.joi Covenant component, tests, and the living map. Remove forwarding or duplicate validation code where proof permits. Record code removed and run all slice gates.",
+  "id": "jido-572.4.10",
+  "labels": [],
+  "parent": "jido-572.4",
+  "priority": 1,
+  "status": "open",
+  "title": "Apply the Jido.Joi reduction",
+  "type": "task",
+  "updated_at": "2026-11-03T16:52:56Z"
+}
