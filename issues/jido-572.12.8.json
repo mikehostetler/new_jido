@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.12.3"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:54:17Z",
   "description": "Define which suites run on each pull request, on a scheduled job, and by explicit local command. Add time and resource budgets. Document source baselines, retained scenarios, skipped external tests, and follow-up production gaps. Confirm that jido/lib did not change in this foundation epic.",

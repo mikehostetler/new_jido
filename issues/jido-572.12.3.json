@@ -3,7 +3,9 @@
   "blocked_by": [
     "jido-572.12.2"
   ],
-  "blocks": [],
+  "blocks": [
+    "jido-572.12.8"
+  ],
   "created": "2026-11-03T16:54:16Z",
   "description": "Restore authoring backpressure for Agent, Plugin, Action, Flow, and AI authoring. Adapt the reference tests to the consolidated namespaces and current public APIs. Do not change jido/lib.",
   "id": "jido-572.12.3",
