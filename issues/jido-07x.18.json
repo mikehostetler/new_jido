@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-07x.7"
+  ],
   "blocks": [],
   "created": "2026-11-03T21:18:37Z",
   "description": "## Objective\n\nKeep one ReAct benchmark family with distinct memory, state-growth, and fresh-workflow checks.\n\n## Context\n\nPlan: \nUnit: \nCovers: \n\nImplement only this quality-import unit. Follow the plan decisions. Do not change  or . When a source assertion needs a product change, record the asset as deferred with the failing command.\n\n## Dependencies\n\n- Blocked by: jido-07x.7 (U7) — Port Action and Flow benchmark smoke checks must be complete; jido-07x.15 (U15) — Port offline AI examples must be complete.\n- Unblocks: jido-07x.20 (U20) — Enforce quality gates in CI and agent guidance must be complete.\n\n## Files\n\nRead AI baseline `test/bench/**`, post-baseline `react_fresh_memory.exs` at `65cc5fda0380c0b95fef955687495b8786d03e3b`, and current `bench/react_memory.exs`. Add `test/bench/ai/**` and `bench/ai/**` only for distinct checks. Change the manifest.\n\n## Instructions\n\n1. Keep `bench/react_memory.exs` as the current memory owner.\n2. Add the baseline state-growth check when it proves a distinct invariant.\n3. Add the fresh-workflow check with its post-baseline commit when it proves a distinct invariant.\n4. Use deterministic model and tool fixtures.\n\n## Acceptance criteria\n\n- [ ] Each AI benchmark metric has one documented owner.\n- [ ] No duplicate ReAct implementation enters `lib/**`.\n- [ ] Offline benchmark checks need no provider key.\n\n## Verification\n\n- `mix test.bench test/bench/ai` and all documented offline `mix bench.*` commands exit with status `0`.\n\n## Handoff\n\nIn the Beadwork completion comment, list changed files, source manifest records, verification results, deferred assets, deviations from the plan, and remaining blockers.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Reconcile offline AI benchmarks",
   "type": "task",
-  "updated_at": "2026-11-03T21:18:38Z"
+  "updated_at": "2026-11-03T21:18:39Z"
 }
