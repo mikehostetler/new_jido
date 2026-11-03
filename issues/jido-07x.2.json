@@ -15,9 +15,15 @@
   "id": "jido-07x.2",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed 204362f. Changed AGENTS.md, mix.exs, test/quality/source_manifest.yml, and moved all 16 files from test/jido/core_authoring to test/authoring. Added test.contracts, added authoring and contracts to test.ci, and updated support ignore paths. Manifest record: split-core test/authoring remains ported and now targets test/authoring. Verification passed: mix test.authoring (74 passed, seed 0); mix test.contracts (3296 tests, 78 excluded, 323/323 active obligations); mix reach.check --arch --smells; mix format --check-formatted; manifest test (6 passed). Deferred assets: none. Deviation: the pre-move command mix test test/jido/core_authoring --include authoring --seed 0 exposed two stale Registry-to-Catalog expectations (72/74 passed). The moved tests now assert the current ArgumentError for an invalid Catalog, preserving and strengthening the rejection requirement without lib changes or skipped assertions. Remaining blockers: none. No lib or refs files changed.",
+      "timestamp": "2026-11-03T21:30:38Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Activate authoring and Covenant gates",
   "type": "task",
-  "updated_at": "2026-11-03T21:26:49Z"
+  "updated_at": "2026-11-03T21:30:38Z"
 }
