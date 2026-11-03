@@ -4,6 +4,7 @@
     "jido-07x.1"
   ],
   "blocks": [
+    "jido-07x.12",
     "jido-07x.5",
     "jido-07x.8"
   ],
@@ -16,5 +17,5 @@
   "status": "open",
   "title": "Activate authoring and Covenant gates",
   "type": "task",
-  "updated_at": "2026-11-03T21:18:38Z"
+  "updated_at": "2026-11-03T21:18:39Z"
 }
