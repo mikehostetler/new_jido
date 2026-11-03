@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T21:18:37Z",
+  "description": "## Objective\n\nAdd executable durability, pattern, and distribution examples for Action and Exec.\n\n## Context\n\nPlan: \nUnit: \nCovers: \n\nImplement only this quality-import unit. Follow the plan decisions. Do not change  or . When a source assertion needs a product change, record the asset as deferred with the failing command.\n\n## Dependencies\n\n- Blocked by: U6 — Port Action system and load checks must be complete; U8 — Add the example catalog harness must be complete.\n- Unblocks: U20 — Enforce quality gates in CI and agent guidance must be complete.\n\n## Files\n\nRead Action example groups `03_durability/**`, `04_patterns/**`, and `05_distribution/**` with their tests at commit `40ec1f0af3a373bae5e6d869017cc229c85aef92`. Add `examples/flow/advanced/**` and matching tests. Change the manifest.\n\n## Instructions\n\n1. Port each example that passes against current public behavior.\n2. Keep process recovery, cancellation, compaction, worker claim, fencing, compensation, and distribution assertions.\n3. Defer a source example instead of changing `lib/**` when behavior is missing.\n\n## Acceptance criteria\n\n- [ ] Every source example in the three groups has a manifest disposition.\n- [ ] Ported examples use barriers or monitors for ordering.\n- [ ] Deferred examples record the exact failing command and expected behavior.\n\n## Verification\n\n- `mix test.examples test/examples/flow/advanced` exits with status `0`.\n\n## Handoff\n\nIn the Beadwork completion comment, list changed files, source manifest records, verification results, deferred assets, deviations from the plan, and remaining blockers.",
+  "id": "jido-07x.11",
+  "labels": [],
+  "parent": "jido-07x",
+  "priority": 2,
+  "status": "open",
+  "title": "Port advanced Action examples",
+  "type": "task",
+  "updated_at": "2026-11-03T21:18:37Z"
+}
