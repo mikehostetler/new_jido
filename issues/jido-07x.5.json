@@ -1,5 +1,5 @@
 {
-  "assignee": "",
+  "assignee": "Mike Hostetler",
   "blocked_by": [
     "jido-07x.2",
     "jido-07x.3"
@@ -17,8 +17,8 @@
   "labels": [],
   "parent": "jido-07x",
   "priority": 2,
-  "status": "open",
+  "status": "in_progress",
   "title": "Port Action and Flow property checks",
   "type": "task",
-  "updated_at": "2026-11-03T21:19:04Z"
+  "updated_at": "2026-11-03T21:46:11Z"
 }
