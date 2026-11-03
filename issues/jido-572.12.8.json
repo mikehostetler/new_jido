@@ -2,7 +2,8 @@
   "assignee": "",
   "blocked_by": [
     "jido-572.12.3",
-    "jido-572.12.4"
+    "jido-572.12.4",
+    "jido-572.12.5"
   ],
   "blocks": [],
   "created": "2026-11-03T16:54:17Z",
@@ -14,5 +15,5 @@
   "status": "open",
   "title": "Add the quality backpressure matrix and documentation",
   "type": "task",
-  "updated_at": "2026-11-03T16:54:17Z"
+  "updated_at": "2026-11-03T16:54:18Z"
 }
