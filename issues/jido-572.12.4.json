@@ -3,7 +3,9 @@
   "blocked_by": [
     "jido-572.12.2"
   ],
-  "blocks": [],
+  "blocks": [
+    "jido-572.12.8"
+  ],
   "created": "2026-11-03T16:54:16Z",
   "description": "Port examples as executable tests. Prefer a smaller set of strong examples over duplicate package-era examples. Each retained example must compile and run against the consolidated public API. Do not change jido/lib.",
   "id": "jido-572.12.4",
