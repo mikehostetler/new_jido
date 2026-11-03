@@ -9,9 +9,15 @@
     "architecture",
     "quality"
   ],
+  "comments": [
+    {
+      "text": "Quality foundation rule: restore reference authoring, example, property, system, load, and benchmark backpressure before production-code reduction starts. The foundation tasks must not change jido/lib. Record a production gap as a follow-up issue.",
+      "timestamp": "2026-11-03T16:54:18Z"
+    }
+  ],
   "priority": 0,
   "status": "open",
   "title": "Improve Jido architecture quality after consolidation",
   "type": "epic",
-  "updated_at": "2026-11-03T16:52:56Z"
+  "updated_at": "2026-11-03T16:54:18Z"
 }
