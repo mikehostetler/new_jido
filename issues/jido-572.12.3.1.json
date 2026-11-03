@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:54:16Z",
+  "description": "Port the useful cases from refs/jido_v3_split/test/authoring and its support files. Cover composable Agents, extensions, environment, execution, format consistency, JSON, metadata, mutation, and durable authoring. Reuse the existing consolidated unit tests. Do not duplicate them.",
+  "id": "jido-572.12.3.1",
+  "labels": [],
+  "parent": "jido-572.12.3",
+  "priority": 0,
+  "status": "open",
+  "title": "Port core Agent and Plugin authoring scenarios",
+  "type": "task",
+  "updated_at": "2026-11-03T16:54:16Z"
+}
