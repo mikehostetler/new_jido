@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.1.1"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:52:55Z",
   "description": "Define one slice by namespace responsibility and primary Covenant owner. For each slice, record allowed dependencies, process ownership, public API, data contracts, and Keep, Move, Merge, or Remove decisions. Define a small scorecard for code removed, APIs reduced, cycles removed, and contract proof.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Define the architecture slice charter and decision rules",
   "type": "task",
-  "updated_at": "2026-11-03T16:52:55Z"
+  "updated_at": "2026-11-03T16:52:56Z"
 }
