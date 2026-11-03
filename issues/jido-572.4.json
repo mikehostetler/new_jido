@@ -3,7 +3,9 @@
   "blocked_by": [
     "jido-572.3"
   ],
-  "blocks": [],
+  "blocks": [
+    "jido-572.5"
+  ],
   "created": "2026-11-03T16:52:55Z",
   "description": "Review the primitives from zero Jido dependencies upward. Keep these modules free of Jido domain and runtime knowledge. Align each slice with its Covenant component during its reduction task.",
   "id": "jido-572.4",

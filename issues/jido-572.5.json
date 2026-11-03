@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.4"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:52:56Z",
   "description": "After primitives are stable, create one review and one reduction task for each final value-model Covenant component: catalog, conversation, codec, and signal. Order tasks by the measured dependency graph.",
