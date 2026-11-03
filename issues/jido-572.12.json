@@ -1,7 +1,9 @@
 {
   "assignee": "",
   "blocked_by": [],
-  "blocks": [],
+  "blocks": [
+    "jido-572.4"
+  ],
   "created": "2026-11-03T16:54:16Z",
   "description": "Port and update the strongest non-unit quality assets from the four release/v3 reference repositories. This phase can change tests, examples, benchmark code, test support, Mix aliases, and CI only. It must not change jido/lib. If an asset exposes a production gap, record a follow-up issue instead of changing production code.",
   "id": "jido-572.12",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Restore cross-package quality backpressure",
   "type": "epic",
-  "updated_at": "2026-11-03T16:54:16Z"
+  "updated_at": "2026-11-03T16:54:18Z"
 }

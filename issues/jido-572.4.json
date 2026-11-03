@@ -1,6 +1,7 @@
 {
   "assignee": "",
   "blocked_by": [
+    "jido-572.12",
     "jido-572.3"
   ],
   "blocks": [
@@ -19,5 +20,5 @@
   "status": "open",
   "title": "Review and reduce the primitives layer",
   "type": "epic",
-  "updated_at": "2026-11-03T16:52:56Z"
+  "updated_at": "2026-11-03T16:54:18Z"
 }
