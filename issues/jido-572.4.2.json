@@ -1,6 +1,8 @@
 {
   "assignee": "",
-  "blocked_by": [],
+  "blocked_by": [
+    "jido-572.4.1"
+  ],
   "blocks": [],
   "created": "2026-11-03T16:52:55Z",
   "description": "Apply the accepted Jido.Id review decisions. Remove duplicate or dead code. Update the living map, .reach.exs, the jido.id Covenant records and tags, and focused tests in the same change. Preserve public behavior unless an ADR approves a change. Record code removed and run all slice gates.",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Apply the Jido.Id reduction",
   "type": "task",
-  "updated_at": "2026-11-03T16:52:55Z"
+  "updated_at": "2026-11-03T16:52:56Z"
 }

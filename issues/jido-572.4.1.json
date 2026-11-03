@@ -1,7 +1,9 @@
 {
   "assignee": "",
   "blocked_by": [],
-  "blocks": [],
+  "blocks": [
+    "jido-572.4.2"
+  ],
   "created": "2026-11-03T16:52:55Z",
   "description": "Run elixir-architecture-review on Jido.Id only. It has no Jido dependencies and is the pilot slice. Do not implement changes. Record responsibility, API depth, tests, Covenant ownership, and Keep, Move, Merge, or Remove findings. Estimate safe code removal.",
   "id": "jido-572.4.1",
@@ -11,5 +13,5 @@
   "status": "open",
   "title": "Review the Jido.Id primitive",
   "type": "task",
-  "updated_at": "2026-11-03T16:52:55Z"
+  "updated_at": "2026-11-03T16:52:56Z"
 }
