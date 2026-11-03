@@ -7,6 +7,7 @@
   "blocks": [
     "jido-07x.10",
     "jido-07x.11",
+    "jido-07x.12",
     "jido-07x.9"
   ],
   "created": "2026-11-03T21:18:37Z",
@@ -18,5 +19,5 @@
   "status": "open",
   "title": "Add the example catalog harness",
   "type": "task",
-  "updated_at": "2026-11-03T21:18:38Z"
+  "updated_at": "2026-11-03T21:18:39Z"
 }
