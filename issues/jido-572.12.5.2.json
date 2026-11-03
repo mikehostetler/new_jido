@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:54:16Z",
+  "description": "Port the useful expression and execution properties from refs/jido_action, including report support. Extend only where the consolidated behavior has a current contract. Do not duplicate Covenant examples as broad properties.",
+  "id": "jido-572.12.5.2",
+  "labels": [],
+  "parent": "jido-572.12.5",
+  "priority": 0,
+  "status": "open",
+  "title": "Port Action, Flow, and execution property tests",
+  "type": "task",
+  "updated_at": "2026-11-03T16:54:16Z"
+}
