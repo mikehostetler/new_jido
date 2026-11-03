@@ -9,7 +9,11 @@
   "created": "2026-11-03T16:52:55Z",
   "description": "Give Reach and Covenant separate jobs. Reach controls allowed code dependencies. Covenant controls one behavior owner and its proof. Add an automated mapping check and remove known ownership debt one reviewed slice at a time.",
   "id": "jido-572.2",
-  "labels": [],
+  "labels": [
+    "architecture",
+    "covenant",
+    "reach"
+  ],
   "parent": "jido-572",
   "priority": 0,
   "status": "open",
