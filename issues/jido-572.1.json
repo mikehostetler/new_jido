@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-03T16:52:55Z",
+  "description": "Make the living module map the exact design authority. Define each namespace slice, layer, data boundary, OTP owner, public surface, and allowed dependency direction. Then encode the result in .reach.exs.",
+  "id": "jido-572.1",
+  "labels": [],
+  "parent": "jido-572",
+  "priority": 0,
+  "status": "open",
+  "title": "Formalize the Jido namespace boundary model",
+  "type": "epic",
+  "updated_at": "2026-11-03T16:52:55Z"
+}
