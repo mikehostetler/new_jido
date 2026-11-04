@@ -1,7 +1,8 @@
 {
   "assignee": "",
   "blocked_by": [
-    "jido-nnq.2"
+    "jido-nnq.2",
+    "jido-nnq.3"
   ],
   "blocks": [],
   "created": "2026-11-04T18:57:54Z",
@@ -13,5 +14,5 @@
   "status": "open",
   "title": "Reconcile generated Flow authoring proof",
   "type": "task",
-  "updated_at": "2026-11-04T18:58:11Z"
+  "updated_at": "2026-11-04T18:58:12Z"
 }
