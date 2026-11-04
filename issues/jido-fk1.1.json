@@ -35,11 +35,15 @@
     {
       "text": "Round 7/10 architecture-policy-violation: mix reach.check --arch --smells passed the architecture policy. Reach reported 276 advisory smells, but no enabled project rule makes them failures; no automatic source change.",
       "timestamp": "2026-11-04T22:39:25Z"
+    },
+    {
+      "text": "Round 8/10 test-arbitrary-sleep: recorded open judgment finding EXQ-0003 for three fixed 10 ms ReplyGate coordination waits. No automatic fix: done/1 has no acknowledgement, and a safe barrier changes the internal process protocol or test contract.",
+      "timestamp": "2026-11-04T22:39:58Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Run 10 quality review and fix rounds",
   "type": "task",
-  "updated_at": "2026-11-04T22:39:25Z"
+  "updated_at": "2026-11-04T22:39:58Z"
 }
