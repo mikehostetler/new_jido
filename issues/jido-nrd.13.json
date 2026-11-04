@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "An Emit with no target casts to its own server. A type matching its own route loops without limit (486 Turns in 300 ms). An unrouted one logs a warning naming neither type nor reason.\n\nOwner: `jido.agent_server.composition`\nRoot cause: `lib/jido/agent_server/topology.ex:341-344`; `agent_server.ex:3091`\nClaims: agents.B1, plugins.B4\nRepro (probe file: id prefix): `30_c_agents`: `agents.B1`, `plugins.B4`\nGuides: `guides/agents/route-transforms-and-forwards.md:189`; `guides/agent-servers/runtime-directives-and-effects.md:249`; `guides/agents/agent-results-and-directives.md:115`\n\nDone when: An untargeted Emit cannot loop without limit, and an unrouted one logs its type and reason.\n\nSource: guide-report triage, finding B13. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.13",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Guard or remove the Emit self-cast fallback",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
