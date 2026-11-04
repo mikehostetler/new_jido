@@ -1,6 +1,7 @@
 {
   "assignee": "",
   "blocked_by": [
+    "jido-07x.24",
     "jido-07x.4",
     "jido-07x.5"
   ],
@@ -16,5 +17,5 @@
   "status": "open",
   "title": "Port Action and Flow benchmark smoke checks",
   "type": "task",
-  "updated_at": "2026-11-03T21:19:04Z"
+  "updated_at": "2026-11-04T13:18:10Z"
 }
