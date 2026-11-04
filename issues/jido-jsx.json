@@ -1,5 +1,5 @@
 {
-  "assignee": "",
+  "assignee": "Mike Hostetler",
   "blocked_by": [],
   "blocks": [],
   "created": "2026-11-04T17:41:58Z",
@@ -7,8 +7,8 @@
   "id": "jido-jsx",
   "labels": [],
   "priority": 2,
-  "status": "open",
+  "status": "in_progress",
   "title": "Flatten examples into one catalog",
   "type": "task",
-  "updated_at": "2026-11-04T17:41:58Z"
+  "updated_at": "2026-11-04T17:41:59Z"
 }
