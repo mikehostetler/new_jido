@@ -6,14 +6,16 @@
   "blocks": [
     "jido-fjs.5"
   ],
+  "closed_at": "2026-11-04T20:40:46Z",
+  "close_reason": "Moved authoring and property proof to final namespace-owned paths, renamed executable and helper modules, registered 47 proof claims, preserved source manifest history, and passed all U4 verification gates in commit 8ca848b.",
   "created": "2026-11-04T19:20:29Z",
   "description": "Unit: U4\nPlan: docs/plans/2026-11-04-1314-refactor-jido-test-tree-plan.md#u4-reorganize-authoring-and-property-lanes\n\nOutcome\nAuthoring, property, and corpus files use final namespace owners and have clear claim ownership.\n\nRequirements and decisions\nR1-R8, R10-R14, R16; KTD1-KTD5, KTD7-KTD9.\n\nAffected surfaces\ntest/authoring/**; test/property/**; test/test_helper.exs; mix.exs; test/quality/component_proof.yml; test/quality/quality_contract.yml; test/quality/source_manifest.yml; and lane READMEs.\n\nImplementation direction\nMove Agent and Flow authoring to test/authoring/{jido_agent,jido_flow}. Move property families to test/property/{jido_agent_server,jido_expr,jido_signal} and Signal corpus to test/property/corpus/jido_signal. Rename modules and update loaders and report selection. Register a DSL or generated-invariant claim as canonical when only this lane proves it. Link a repeated runtime claim to its canonical owner as supplemental evidence. Update only source-manifest target_path values. Preserve source_path history.\n\nAcceptance\nAgent and Flow authoring run together and stay out of default. Property and fuzz aliases select all three families. Focused files use only their family policy. Signal corpus replay passes. Each evidence group either owns a distinct DSL or invariant claim, or links to an existing canonical runtime claim. Manifest targets exist and are unique.\n\nVerification\nmix test.authoring --warnings-as-errors\nmix test.property --warnings-as-errors\nmix test.fuzz --warnings-as-errors\nmix test test/quality/source_manifest_test.exs test/quality/component_proof_test.exs --seed 0\nmix format --check-formatted\n\nCompletion signal\nAuthoring and property proof pass from final paths, claim ownership is complete, and U5 can start.",
   "id": "jido-fjs.4",
   "labels": [],
   "parent": "jido-fjs",
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "U4 Reorganize authoring and property proof",
   "type": "task",
-  "updated_at": "2026-11-04T20:34:52Z"
+  "updated_at": "2026-11-04T20:40:46Z"
 }
