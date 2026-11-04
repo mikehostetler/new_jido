@@ -3,7 +3,9 @@
   "blocked_by": [
     "jido-07x.20"
   ],
-  "blocks": [],
+  "blocks": [
+    "jido-07x.26"
+  ],
   "created": "2026-11-04T16:12:26Z",
   "description": "## Objective\n\nMake test/bench the only repository location for benchmark code, benchmark smoke tests, fixtures, runners, and documentation.\n\n## Scope\n\nMove and weave all current bench content into subsystem folders under test/bench. Preserve Signal, Action and Flow, and AI or ReAct workloads. Update Mix aliases, code loading paths, README links, the quality source manifest, the quality contract, and generated report metadata. Write generated output only under tmp/bench.\n\nDo not change lib or refs.\n\n## Acceptance criteria\n\n- The repository has no tracked top-level bench folder.\n- test/bench contains the smoke tests, manual runners, fixtures, support code, and benchmark documentation.\n- No Mix alias, test, script, manifest record, or document refers to a top-level bench path.\n- Quick benchmark smoke checks stay bounded and deterministic.\n- Standard and stress profiles stay explicit and opt-in.\n- mix test.bench exits with status 0.\n- Every documented manual benchmark command loads from test/bench and exits with status 0 for its quick profile.\n- mix quality.coverage and mix quality.report still collect benchmark evidence.\n\n## Handoff\n\nRecord moved files, path changes, commands, results, and any deferred benchmark in the completion comment.",
   "id": "jido-07x.25",
