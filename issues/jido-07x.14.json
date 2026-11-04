@@ -12,9 +12,15 @@
   "id": "jido-07x.14",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed U14 in commit b1fd539. Added 28 numbered lessons under examples/plugin/08_applications, examples/plugin/09_plugins, examples/persistence/10_persistence, and examples/durable/11_durable with mirrored tests and four durable test helpers. Updated the catalog, source manifest, plan paths, and local links. Excluded durable proposals, shared support trees, and two auxiliary tests with explicit reasons. Verification: focused U14 58 passed with warnings as errors; full examples 226 passed; peer 7 passed and 3728 excluded; catalog 8 passed; source manifest 6 passed; format, link, diff, and no-lib/no-refs checks passed. No supported asset was deferred. Proposal-only 11_08 through 11_19 remain excluded by plan.",
+      "timestamp": "2026-11-04T15:53:28Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port core Plugin and persistence examples",
   "type": "task",
-  "updated_at": "2026-11-04T15:43:37Z"
+  "updated_at": "2026-11-04T15:53:28Z"
 }
