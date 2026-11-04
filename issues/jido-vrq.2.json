@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T21:57:37Z",
+  "description": "Write all guide_toc entries under guides/from-typescript from lib/ source. Uncommitted on main.",
+  "id": "jido-vrq.2",
+  "labels": [],
+  "parent": "jido-vrq",
+  "priority": 2,
+  "status": "open",
+  "title": "Guides: from-typescript",
+  "type": "task",
+  "updated_at": "2026-11-04T21:57:37Z"
+}
