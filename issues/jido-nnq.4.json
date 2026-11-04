@@ -1,5 +1,5 @@
 {
-  "assignee": "",
+  "assignee": "Mike Hostetler",
   "blocked_by": [
     "jido-nnq.2",
     "jido-nnq.3"
@@ -11,8 +11,8 @@
   "labels": [],
   "parent": "jido-nnq",
   "priority": 2,
-  "status": "open",
+  "status": "in_progress",
   "title": "Reconcile generated Flow authoring proof",
   "type": "task",
-  "updated_at": "2026-11-04T18:58:12Z"
+  "updated_at": "2026-11-04T19:11:09Z"
 }
