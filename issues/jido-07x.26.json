@@ -3,7 +3,9 @@
   "blocked_by": [
     "jido-07x.25"
   ],
-  "blocks": [],
+  "blocks": [
+    "jido-07x.28"
+  ],
   "created": "2026-11-04T16:12:32Z",
   "description": "## Objective\n\nMake the benchmark suite complete, repeatable, and useful for comparisons without adding machine-dependent CI failures.\n\n## Scope\n\nCreate one benchmark catalog under test/bench. Map each benchmark to its component, workload, limiter, profile, metric, and owner. Add common metadata and result schema checks for manual benchmark runners. Keep quick profiles in required offline checks. Keep standard, stress, and long comparisons opt-in.\n\nDo not change lib or refs. Do not commit generated benchmark result trees.\n\n## Acceptance criteria\n\n- test/bench/README.md lists every benchmark family and exact command.\n- Each family declares the component, workload, limiter, input size, concurrency, warmup, sample count, metrics, and supported profiles.\n- Result artifacts include the Git revision, dirty state, Elixir and OTP versions, seed, workload, profile, and measurement units.\n- Schema tests reject incomplete or incompatible result artifacts.\n- Quick profiles have deterministic fixtures and bounded work.\n- CI does not use a fixed wall-clock threshold across unlike machines.\n- Repeated quick runs produce the same case inventory and valid result schema.\n- mix test.bench exits with status 0.\n\n## Handoff\n\nRecord the catalog, schema, repeatability evidence, commands, and any component with no useful benchmark in the completion comment.",
   "id": "jido-07x.26",
@@ -13,5 +15,5 @@
   "status": "open",
   "title": "Define the benchmark catalog and repeatability contract",
   "type": "task",
-  "updated_at": "2026-11-04T16:12:50Z"
+  "updated_at": "2026-11-04T16:12:51Z"
 }
