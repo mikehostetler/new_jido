@@ -2,14 +2,15 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-04T22:33:24Z",
   "created": "2026-11-04T21:57:38Z",
   "description": "Write all guide_toc entries under guides/data from lib/ source. Uncommitted on main.",
   "id": "jido-vrq.17",
   "labels": [],
   "parent": "jido-vrq",
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Guides: data",
   "type": "task",
-  "updated_at": "2026-11-04T21:57:38Z"
+  "updated_at": "2026-11-04T22:33:24Z"
 }
