@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:21Z",
+  "description": "A non-portable durable context value gives `{:error, [:continuation, :context, :jido_ai_dispatch, 1, 0, 1]}`, a bare path with no message or struct. Not AI-specific.\n\nOwner: `jido_action.execution` (`jido.execution`)\nRoot cause: `lib/jido/exec/continuation.ex:215`\nClaims: ai.B4\nRepro (probe file: id prefix): `40_d_ai`: `ai.B4`\nGuides: `guides/ai/tool-review.md`; `guides/ai/react-reasoning.livemd` (keep the restriction, change the shape)\n\nDone when: The failure is a Jido.Error naming the key and why it is not portable.\n\nSource: guide-report triage, finding B32. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.32",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Return a structured error for non-portable durable context",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:21Z"
+}
