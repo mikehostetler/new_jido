@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T19:20:22Z",
+  "description": "Unit: U3\nPlan: docs/plans/2026-11-04-1314-refactor-jido-test-tree-plan.md#u3-flatten-the-default-jido-test-tree\n\nOutcome\nNormal and Covenant-tagged executable tests live under their owning Jido.* namespace paths.\n\nRequirements and decisions\nR2, R4-R6, R8, R10, R12, R13; KTD3, KTD4, KTD6, KTD8.\n\nAffected surfaces\ntest/jido/core_contract/**; test/jido/ai/contract/**; test/jido/**; Covenant-tagged tests; test/contracts/coverage.json; and active consumers for the default lane.\n\nImplementation direction\nMove each core_contract subtree to its component namespace and move AI contract families below specific AI owners. Rename executable modules to production Jido.* and local fixtures to Jido.Test.*. Resolve both Agent authoring_contract_test.exs destination names by their specific behavior and keep both suites. Preserve Covenant component IDs, obligation tags, active counts, and mutation ownership. Delete an overlapping test only with the KTD6 proof ledger.\n\nAcceptance\nDefault tests find all moved files and do not load support as tests. Covenant discovers every prior active obligation with 100 percent coverage. Active IDs and obligation counts match the U1 baseline. Both renamed Agent authoring suites execute. No core_contract or broad AI contract path remains active.\n\nVerification\nmix test --seed 0 --warnings-as-errors\nmix test.contracts\nmix quality.contract\nmix format --check-formatted\n\nCompletion signal\nDefault and Covenant proof pass from namespace-owned paths with unchanged active IDs and counts, and U4 can start.",
+  "id": "jido-fjs.3",
+  "labels": [],
+  "parent": "jido-fjs",
+  "priority": 2,
+  "status": "open",
+  "title": "U3 Flatten the default Jido test tree",
+  "type": "task",
+  "updated_at": "2026-11-04T19:20:22Z"
+}
