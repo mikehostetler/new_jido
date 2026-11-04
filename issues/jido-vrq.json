@@ -6,9 +6,15 @@
   "description": "Write all 162 guides listed in guide_toc/0 in mix.exs, grounded in lib/. Delivered uncommitted on main per user direction; subagents per section with disjoint guides/\u003cdir\u003e scopes. Mix.install uses github: mikehostetler/new_jido branch main.",
   "id": "jido-vrq",
   "labels": [],
+  "comments": [
+    {
+      "text": "Root guides (dynamic-flows.md, flow-choices/collections/iterate-state/steps.livemd) found deleted in the working tree during the run; cause unknown, no subagent rm found. Left as is pending user decision; recoverable from HEAD.",
+      "timestamp": "2026-11-04T22:23:18Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Write the guide_toc guides from lib source",
   "type": "epic",
-  "updated_at": "2026-11-04T21:57:25Z"
+  "updated_at": "2026-11-04T22:23:18Z"
 }
