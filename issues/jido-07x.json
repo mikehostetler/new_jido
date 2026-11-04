@@ -2,6 +2,8 @@
   "assignee": "Mike Hostetler",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-04T17:39:06Z",
+  "close_reason": "Quality plan Definition of Done and final acceptance are complete",
   "created": "2026-11-03T21:18:37Z",
   "description": "## Goal\n\nImport the useful authoring, example, property, fuzz, system, load, live, and benchmark checks from the four source packages into the consolidated Jido project.\n\nPlan: `docs/plans/2026-11-03-1512-consolidated-quality-backpressure-plan.md`\n\n## Global non-goals\n\n- Do not change `lib/**`.\n- Do not change `../refs/**`.\n- Do not import historical benchmark result trees.\n- Do not put provider or external service checks in the required offline gate.\n\n## Definition of done\n\n- Every reviewed asset has an exact source commit and disposition.\n- All focused offline suites pass.\n- Required CI runs every offline suite, Covenant, and Reach.\n- Live and service suites are explicit and documented.",
   "id": "jido-07x",
@@ -13,7 +15,7 @@
     }
   ],
   "priority": 1,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Import consolidated quality backpressure",
   "type": "epic",
   "updated_at": "2026-11-04T17:39:06Z"
