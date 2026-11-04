@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "- **Claims:** ai.B2, ai.D4\n- **Owner:** `jido.agent_evaluation` for the merge (`lib/jido/agent/route.ex:308`, `Map.merge`). Policy is in `jido_ai.tools` (`jido.ai.tools`).\n- **Observed:**\n  - An Agent with `review [\"lookup\"]` blocks with `reason_code: :review`. The same request with `tool_policy: %{}` gives `status: :completed, tool_rounds: 1`, so the tool ran **unreviewed**.\n  - `limits: %{model_calls: 2}` resets `tool_rounds` 2 to 4 and `elapsed_ms` 30,000 to 120,000.\n  - A request can raise limits and set `instructions: \"HOSTILE\"`.\n- **Condition:** the application must forward untrusted data into `request_signal!/1`. Contract `jido_ai.tools.I3` is titled \"Request policy only reduces capability\", though its scope is only `Toolset.select/2`, so this breaks the title's intent rather than its literal scope.\n- **Repro:**\n\n```bash\nmix run --no-compile tmp/guide-reports/probes/40_d_ai.exs 2\u003e\u00261 | grep -a '^ai.B2'\n```\n\n- **Guides:** `guides/ai/reasoning-flows-models-and-limits.md` (\"The merge is shallow\"), `guides/ai/tool-review.md` (\"A request that sends its own `tool_policy`...\").\n- **Proposed task (P1):** \"Protect Agent-level AI policy from request overrides\". Done when a request cannot drop Agent review, and a stated rule covers limits and instructions.\n\nSource: guide-report triage, finding B02. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.2",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 1,
+  "status": "open",
+  "title": "Protect Agent-level AI policy from request overrides",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
