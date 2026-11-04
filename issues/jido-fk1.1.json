@@ -23,11 +23,15 @@
     {
       "text": "Round 4/10 credo advisory: verified EXQ-0001 in batch EXQ-B-20261104-01. Replaced a one-clause with/else with case in Jido.Codec.Issue; focused Credo clean, 2 tests passed, formatter passed.",
       "timestamp": "2026-11-04T22:34:50Z"
+    },
+    {
+      "text": "Round 5/10 dialyzer-warning: verified EXQ-0002 in batch EXQ-B-20261104-02. ShutdownPlugin now returns Supervisor.child_spec/0; Dialyzer has 0 unignored warnings, 12 focused tests passed, formatter passed.",
+      "timestamp": "2026-11-04T22:37:39Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Run 10 quality review and fix rounds",
   "type": "task",
-  "updated_at": "2026-11-04T22:34:50Z"
+  "updated_at": "2026-11-04T22:37:39Z"
 }
