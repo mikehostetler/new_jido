@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T19:20:07Z",
+  "description": "Unit: U1\nPlan: docs/plans/2026-11-04-1314-refactor-jido-test-tree-plan.md#u1-consolidate-property-and-duplicate-infrastructure\n\nOutcome\nOne configured property and fuzz evidence pipeline replaces the duplicate Signal and Action/Flow harnesses and reporters. Unused authoring compiler and benchmark layout enforcement are removed.\n\nRequirements and decisions\nR1, R6-R9, R11, R14, R15; KTD5-KTD8.\n\nAffected surfaces\ntest/property/support/**; test/property/action_flow/**; test/property/signal/**; test/property/runtime/**; test/test_helper.exs; mix.exs; test/quality/quality_contract.yml; test/quality/support/report.exs; focused reporter tests; test/authoring/support/compiler.exs; test/bench/layout_test.exs.\n\nImplementation direction\nRecord the integrated post-jido-nnq revision, file and test counts, and full test-tree ExDNA baseline. Extract one family-configured fuzz harness and reporter for Jido.Signal, Jido.Expr, and Jido.AgentServer. Remove BUS-*, EXPR-*, and contract_cases bookkeeping that is not active Covenant ownership. Add complete AgentServer lifecycle measurement evidence without changing component-proof policy. Keep reports and counterexamples in ignored output roots. Record every deletion and its surviving proof or unused-infrastructure reason.\n\nAcceptance\nA full property run records all three families once. Focused family and file runs record only their family. Property-only runs do not require fuzz measurements. Full fuzz requires each configured fuzz ID. Invalid, duplicate, orphaned, failed, or missing measurements fail. Signal corpus replay remains versioned. Known harness and reporter clone groups are gone.\n\nVerification\nmix test.property --warnings-as-errors\nmix test.fuzz --warnings-as-errors\nmix ex_dna test --max-clones 999\nmix format --check-formatted\n\nCompletion signal\nThe three-family reporter contract passes, deletion entries are recorded, the start baseline is recorded, and U2 can start.",
+  "id": "jido-fjs.1",
+  "labels": [],
+  "parent": "jido-fjs",
+  "priority": 2,
+  "status": "open",
+  "title": "U1 Consolidate property evidence infrastructure",
+  "type": "task",
+  "updated_at": "2026-11-04T19:20:07Z"
+}
