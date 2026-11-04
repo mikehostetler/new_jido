@@ -5,12 +5,12 @@
   ],
   "blocks": [],
   "created": "2026-11-04T19:19:59Z",
-  "description": "Canonical plan: docs/plans/2026-11-04-1314-refactor-jido-test-tree-plan.md\n\nObjective\nContributors can find each Jido test, fixture, and proof by purpose and owning Jido.* namespace without understanding former package layouts.\n\nScope\nReorganize the complete test tree after jido-nnq closes. Consolidate shared support and property evidence infrastructure. Remove only proven duplication. Update active path consumers atomically.\n\nTechnical direction\nUse purpose-first, namespace-second paths; one compiled test/support root; production Jido.* namespaces for executable tests; Jido.Test.* for helpers and fixtures; one configured property evidence pipeline; serial integration without compatibility paths.\n\nDefinition of done\nAll seven plan units are closed in dependency order. Required offline and quality gates pass. Covenant IDs and obligation counts remain stable. Retired active paths and test-only namespaces are absent. Final test-tree duplication is below the recorded post-jido-nnq baseline.\n\nInitial frontier\nU1 is the first unit, but it remains blocked until the existing jido-nnq epic closes.",
+  "description": "Canonical plan: docs/plans/2026-11-04-1314-refactor-jido-test-tree-plan.md\n\nObjective\nContributors can find each Jido test, fixture, and proof by purpose and owning Jido.* namespace without understanding former package layouts.\n\nScope\nReorganize the complete test tree after jido-nnq closes. Consolidate shared support and property evidence infrastructure. Remove only proven duplication. Update active path consumers atomically.\n\nTechnical direction\nKeep test/jido/\u003cnamespace\u003e for the default tree. Use flattened jido_\u003cnamespace\u003e directories inside special-purpose lanes. Use one compiled test/support root, production Jido.* namespaces for executable tests, Jido.Test.* for helpers and fixtures, one configured property evidence pipeline, and serial integration without compatibility paths.\n\nDefinition of done\nAll seven plan units are closed in dependency order. Required offline and quality gates pass. Covenant IDs and obligation counts remain stable. Retired active paths and test-only namespaces are absent. Final test-tree duplication is below the recorded post-jido-nnq baseline.\n\nInitial frontier\nU1 is the first unit, but it remains blocked until the existing jido-nnq epic closes.",
   "id": "jido-fjs",
   "labels": [],
   "priority": 2,
   "status": "open",
   "title": "Organize the Jido test tree",
   "type": "epic",
-  "updated_at": "2026-11-04T19:21:12Z"
+  "updated_at": "2026-11-04T19:28:06Z"
 }
