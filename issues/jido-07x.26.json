@@ -11,9 +11,15 @@
   "id": "jido-07x.26",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed in a613864 on main. Added test/bench/catalog.yml, the complete catalog README, and common Catalog and Result support. Eight benchmark families now declare a quality component, owner, workload, limiter, quick command, supported profiles, input size, concurrency, warm-up, sample count, metrics, and units. All JSON runners now record schema version, full Git revision, dirty state, Elixir and OTP versions, seed 0, workload, profile, units, and stable case IDs. Added quick/base/expanded ReAct memory profiles and a bounded quick default. Added schema rejection, catalog completeness, no-threshold, component-ID, repeated case-inventory, and decoded-JSON checks. mix test.bench passed 30 tests. Catalog/schema focus passed 6 tests. All eight exact quick commands passed. Repeated Action/Flow and AI quick runs returned identical case inventories; Signal inventory repeated identically with 150 cases. mix compile --warnings-as-errors, blocking Credo, formatting, and diff checks passed. No machine-dependent timing limit and no lib or refs change. Components with no useful benchmark remain represented by suite-wide proof policy and will be reconciled in U27.",
+      "timestamp": "2026-11-04T17:17:22Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Define the benchmark catalog and repeatability contract",
   "type": "task",
-  "updated_at": "2026-11-04T16:12:51Z"
+  "updated_at": "2026-11-04T17:17:22Z"
 }
