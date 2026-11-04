@@ -11,9 +11,15 @@
   "id": "jido-nnq.2",
   "labels": [],
   "parent": "jido-nnq",
+  "comments": [
+    {
+      "text": "Completed on local main as 6a7dd13. Added components_test.exs, flow_edges_test.exs, and schema_pipeline_test.exs; extended the shared component fixture with one Parallel DSL Flow. The three fixed release/v3 source tests are adapted to current Jido.Error and Jido.Joi contracts. Added one valid and one invalid authoring case for both Parallel and Handoff. Verification: focused mix test.authoring command passed 18 tests with seed 0 and warnings as errors; the full current Flow authoring directory passed 36 tests; mix format --check-formatted and git diff --check passed. No lib or refs files changed. No deferred asset, deviation, follow-up ticket, or remaining blocker.",
+      "timestamp": "2026-11-04T19:05:55Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port Flow component authoring seams",
   "type": "task",
-  "updated_at": "2026-11-04T19:03:20Z"
+  "updated_at": "2026-11-04T19:05:55Z"
 }
