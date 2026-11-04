@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "AgentServer has no `format_status/1`, so a crash report includes Agent state (forced crash logged the sentinel). `Jido.Signal.Bus.Server` has one. **Security-adjacent: consider P1 alongside B01.**\n\nOwner: `jido.agent_server.handoff`\nRoot cause: absence in `lib/jido/agent_server.ex`; compare `lib/jido/signal/bus/server.ex:105`\nClaims: operations.B6\nRepro (probe file: id prefix): `40_d_operations`: `operations.B6`\nGuides: `guides/operations/security.md`\n\nDone when: A forced crash report and :sys.get_status omit Agent state values, with a sentinel test.\n\nSource: guide-report triage, finding B14. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.14",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Add format_status to AgentServer to keep state out of crash reports",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
