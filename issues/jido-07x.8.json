@@ -19,9 +19,15 @@
   "id": "jido-07x.8",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Implemented the unified example catalog harness on main. Added examples/README.md, test/examples/README.md, catalog.yml, catalog and loader support, catalog tests, the support ignore filter, and three ported manifest records. The catalog enforces stable slash IDs, registered categories, one README, one primary source, one paired test, unique assets, complete inventory, the :example tag, and setup_all loader use. The existing live-provider example is an explicit temporary exclusion for U15/U19. Verified catalog tests (7 passed), mix test.examples (7 passed), default selection (7 excluded), manifest tests (6 passed), compile warnings, formatting, and diff checks. Commit: 55c814d. Deferred assets: existing U9-U15 source groups remain deferred. Deviations: none. Remaining blockers: U9-U15 must register each ported example.",
+      "timestamp": "2026-11-04T15:04:42Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Add the example catalog harness",
   "type": "task",
-  "updated_at": "2026-11-04T15:00:57Z"
+  "updated_at": "2026-11-04T15:04:42Z"
 }
