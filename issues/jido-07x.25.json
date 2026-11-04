@@ -12,9 +12,15 @@
   "id": "jido-07x.25",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed in a55e2b8 on main. Moved all Signal, Action/Flow, AI, and ReAct benchmark runners, support code, fixtures, smoke tests, and READMEs under test/bench. Removed the tracked top-level bench tree. Updated Mix aliases, CI commands, formatter inputs, README links, plan paths, source-manifest targets, test loader ignores, and cross-runner paths. Added layout and manifest-target guards. mix test.bench passed 22 tests. All four Action/Flow quick runners, Signal smoke, both AI two-request runners, and mix bench passed from the new paths. Focused layout/manifest/CI tests passed 11 tests. mix format --check-formatted and git diff --check passed. Generated reports stayed under tmp/bench. No lib or refs change. Deferred benchmarks: none. Remaining blocker: none.",
+      "timestamp": "2026-11-04T17:10:16Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Consolidate all benchmark assets under test bench",
   "type": "task",
-  "updated_at": "2026-11-04T16:12:51Z"
+  "updated_at": "2026-11-04T17:10:16Z"
 }
