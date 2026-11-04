@@ -11,9 +11,15 @@
   "id": "jido-07x.27",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed in 71a1580 on main. Extended the public component proof map so all 40 components now classify load and benchmark proof as required or specifically not applicable. Added exact performance evidence groups, benchmark component coverage in test/bench/catalog.yml, a bounded load catalog and test, executable-evidence validation for load and benchmark proof, and rejection tests for missing performance evidence or profiles. Required performance components match their catalogs exactly: load covers jido.agent_server and jido_action.execution; benchmark covers nine Signal, Action/Flow, execution, and ReAct components. Seed 0 remains enforced. JSON and DSL authoring passed 74 tests, including valid forms, invalid and unknown input, normalization, Map/struct/DSL equality, JSON round trips, and semantic equivalence. Property passed 55 tests/3 properties with recorded replay artifacts; fuzz passed 13. Full mix test.ci passed: unit 3,337/468 excluded, authoring 74, examples 260, system 5, load 3, peer 7, benchmark 30, Covenant 3,337/468 with 323/323 obligations. Clean mix quality.coverage passed at 93.1726% package coverage across all 40 components and ten suite contributions; the lowest component was jido_ai.observability at 81.8372%, above the 80% floor and regression contract. Clean mix quality.report passed on revision 71a1580e4e03f39d6c77c490a86ce54898859cf0 with all ten suites passing, zero findings, zero waivers, and dirty=false. No lib or refs change. Coverage changed from 93.1783% to 93.1726% and remained within the fixed regression rule. Deferred product gaps: none for required offline proof; live provider and external service success remain explicit opt-in checks.",
+      "timestamp": "2026-11-04T17:34:36Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Close public component proof gaps",
   "type": "task",
-  "updated_at": "2026-11-04T16:12:51Z"
+  "updated_at": "2026-11-04T17:34:36Z"
 }
