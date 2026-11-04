@@ -13,9 +13,15 @@
   "id": "jido-07x.7",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Implemented Action and Flow benchmark smoke checks on main. Added quick, standard, and stress profiles for Flow compile, Flow run, DSL compilation, and fresh-VM delegation to the current ReAct memory benchmark. Reports stay under tmp/bench/action_flow and include environment plus source fingerprints. Verified mix test.bench test/bench/action_flow (2 passed), manifest tests (6 passed), compile warnings, formatting, and diff checks. Commit: 13362cc.",
+      "timestamp": "2026-11-04T15:00:53Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port Action and Flow benchmark smoke checks",
   "type": "task",
-  "updated_at": "2026-11-04T14:56:01Z"
+  "updated_at": "2026-11-04T15:00:53Z"
 }
