@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T22:31:07Z",
+  "description": "Run 10 bounded quality review and fix rounds against the current jido HEAD in one isolated worktree. Preserve public behavior, required gates, and unrelated main-tree changes. Record evidence for each round and finish with independent verification.",
+  "id": "jido-fk1",
+  "labels": [],
+  "priority": 2,
+  "status": "open",
+  "title": "Ten-round Elixir quality climb",
+  "type": "epic",
+  "updated_at": "2026-11-04T22:31:07Z"
+}
