@@ -6,6 +6,7 @@
   "blocks": [
     "jido-fjs.4"
   ],
+  "closed_at": "2026-11-04T20:34:29Z",
   "created": "2026-11-04T19:20:22Z",
   "description": "Unit: U3\nPlan: docs/plans/2026-11-04-1314-refactor-jido-test-tree-plan.md#u3-flatten-the-default-jido-test-tree\n\nOutcome\nNormal and Covenant-tagged executable tests live under their owning Jido.* namespace paths, and each component has a canonical behavior owner.\n\nRequirements and decisions\nR2, R4-R6, R8, R10, R12, R13, R16; KTD3, KTD4, KTD6, KTD8, KTD9.\n\nAffected surfaces\ntest/jido/core_contract/**; test/jido/ai/contract/**; test/jido/**; Covenant-tagged tests; test/contracts/coverage.json; test/quality/component_proof.yml; and active consumers for the default lane.\n\nImplementation direction\nMove each core_contract subtree to its component namespace and AI contract families below specific AI owners. Rename executable modules to production Jido.* and local fixtures to Jido.Test.*. Resolve filename collisions by behavior and keep distinct proof. Preserve Covenant IDs, tags, counts, and mutation ownership. Register each component canonical behavior owner in component_proof.yml. Delete overlap only with the KTD6 proof ledger.\n\nAcceptance\nDefault tests find all moved files. Covenant discovers every prior active obligation with 100 percent coverage. Active IDs and counts match baseline. Each component has one canonical behavior owner. No core_contract or broad AI contract path remains active.\n\nVerification\nmix test --seed 0 --warnings-as-errors\nmix test.contracts\nmix quality.contract\nmix test test/quality/component_proof_test.exs --seed 0\nmix format --check-formatted\n\nCompletion signal\nDefault and Covenant proof pass from namespace-owned paths, canonical owners are registered, and U4 can start.",
   "id": "jido-fjs.3",
@@ -18,7 +19,7 @@
     }
   ],
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "U3 Flatten the default Jido test tree",
   "type": "task",
   "updated_at": "2026-11-04T20:34:29Z"
