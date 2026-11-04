@@ -10,9 +10,15 @@
   "id": "jido-nnq.1",
   "labels": [],
   "parent": "jido-nnq",
+  "comments": [
+    {
+      "text": "Completed in c6fa3eb and landed on main as 9e5ee86. Added the implementation-ready plan, Flow authoring README with all 22 source dispositions, three adapted core parity tests, all nine support assets, and fixed-baseline source-manifest records. Verification passed: 18 focused authoring tests, 6 source-manifest tests, mix format --check-formatted, git diff --check, authoring tag scan, exact 22-row ledger, and no lib/** or refs/** changes. guides_test.exs is superseded by the named Spark and registered example evidence. No product correction or deferred asset.",
+      "timestamp": "2026-11-04T19:03:14Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port core Flow authoring parity",
   "type": "task",
-  "updated_at": "2026-11-04T18:59:02Z"
+  "updated_at": "2026-11-04T19:03:14Z"
 }
