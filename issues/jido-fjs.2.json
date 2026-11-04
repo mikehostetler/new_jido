@@ -6,6 +6,7 @@
   "blocks": [
     "jido-fjs.3"
   ],
+  "closed_at": "2026-11-04T20:16:59Z",
   "created": "2026-11-04T19:20:15Z",
   "description": "Unit: U2\nPlan: docs/plans/2026-11-04-1314-refactor-jido-test-tree-plan.md#u2-consolidate-shared-support-and-helper-namespaces\n\nOutcome\nThe repository has one compiled test-support root, one helper namespace, owner-specific ordinary fixtures, and a separate isolated-consumer root without compatibility modules.\n\nRequirements and decisions\nR3, R4, R8, R10-R13, R15, R17; KTD2, KTD3, KTD6, KTD8.\n\nAffected surfaces\ntest/jido/support/**; test/support/**; test/fixtures/**; test/consumers/**; mix.exs; .dialyzer_ignore.exs; test/test_helper.exs; and every active caller of moved or renamed support modules.\n\nImplementation direction\nMove test/jido/support into flattened owner paths below test/support/jido_\u003cnamespace\u003e and remove the second compile path. Move ordinary fixtures under owner-specific support. Move inline_consumer to test/consumers/inline_consumer. Rename shared helpers and fixtures to Jido.Test.* and update callers atomically. Merge duplicate tracers and repeated helper infrastructure. Remove old test-module roots instead of forwarding them. Record every deletion.\n\nAcceptance\nThe test environment compiles with lib and test/support as its only compile roots. Ordinary fixtures have an owner. The isolated consumer is not compiled as package support. Representative tests load final helpers. Dynamic modules, Mimic, ExCoveralls, and Dialyzer references use final names.\n\nVerification\nmix compile --warnings-as-errors\nmix test --seed 0 --warnings-as-errors\nmix test.authoring --warnings-as-errors\nmix test.property --warnings-as-errors\nmix format --check-formatted\n\nCompletion signal\ntest/support is the only compiled support root, isolated consumers are separate, all active callers use final names, and U3 can start.",
   "id": "jido-fjs.2",
@@ -18,7 +19,7 @@
     }
   ],
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "U2 Consolidate shared test support",
   "type": "task",
   "updated_at": "2026-11-04T20:16:59Z"
