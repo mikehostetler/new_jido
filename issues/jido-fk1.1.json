@@ -7,9 +7,15 @@
   "id": "jido-fk1.1",
   "labels": [],
   "parent": "jido-fk1",
+  "comments": [
+    {
+      "text": "Round 1/10 format-drift: mix format --check-formatted passed; no finding.",
+      "timestamp": "2026-11-04T22:32:27Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Run 10 quality review and fix rounds",
   "type": "task",
-  "updated_at": "2026-11-04T22:31:19Z"
+  "updated_at": "2026-11-04T22:32:27Z"
 }
