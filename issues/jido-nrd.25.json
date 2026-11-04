@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:21Z",
+  "description": "Map errors lose shape. A params reference failure gives \"Runic execution failed\" with no `node` or `node_path`. A non-enumerable collection returns a bare `ArgumentError`.\n\nOwner: `jido_action.execution` (`jido.execution`)\nRoot cause: `lib/jido/exec/node/map/collection.ex:65-68,73`; `exec.ex:841-843`\nClaims: flow-runtime.B2, flows.B2\nRepro (probe file: id prefix): `10_a_flows`: `flow-runtime.B2`, `flows.B2`\nGuides: `guides/flow-runtime/debugging-flows.md:180`\n\nDone when: Both Map failures return a Jido.Error with node and node_path.\n\nSource: guide-report triage, finding B25. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.25",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Keep node details in Map collection and params errors",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:21Z"
+}
