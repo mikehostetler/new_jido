@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:21Z",
+  "description": "`[:jido, :action, :stop]` `effect_count` is always 0 inside a Flow, while the Flow stop event is correct.\n\nOwner: `jido_action.execution` (`jido.execution`)\nRoot cause: `lib/jido/exec/node/action.ex:85,286`; `telemetry/exec.ex:75`\nClaims: flow-runtime.B3\nRepro (probe file: id prefix): `10_a_flows`: `flow-runtime.B3`\nGuides: none\n\nDone when: The Action stop event counts the effects returned by a Flow step and a Map item.\n\nSource: guide-report triage, finding B23. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.23",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Report Action effect_count correctly inside a Flow",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:21Z"
+}
