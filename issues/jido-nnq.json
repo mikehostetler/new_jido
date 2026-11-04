@@ -1,7 +1,9 @@
 {
   "assignee": "",
   "blocked_by": [],
-  "blocks": [],
+  "blocks": [
+    "jido-fjs.1"
+  ],
   "created": "2026-11-04T18:57:49Z",
   "description": "## Goal\n\nPort the fixed jido_action release/v3 Flow authoring corpus into the consolidated required authoring gate.\n\nPlan: `docs/plans/2026-11-04-1255-test-flow-authoring-suite-plan.md`\n\n## Scope\n\n- Adapt 11 source test files, nine support assets, and one README from commit `177e7a4ce4342a9a6b7bc668f540dafbd7169d54`.\n- Record `guides_test.exs` as superseded by named current guide and example evidence.\n- Use current Catalog, stored Flow version 2, Joi, error, component, and JSON contracts.\n\n## Non-goals\n\n- Do not change `lib/**` or `refs/**`.\n- Do not restore removed Registry, stored version 1, error, or guide contracts.\n- Do not add general runtime, load, or duplicate guide coverage.\n\n## Definition of done\n\n- All 22 source assets have an exact target or superseded disposition.\n- Flow and Agent authoring tests pass together through `mix test.authoring`.\n- Source-manifest, offline CI, coverage, and quality-report checks pass on the clean integrated revision.\n- Every child task is committed, closed, and integrated in dependency order.",
   "id": "jido-nnq",
@@ -10,5 +12,5 @@
   "status": "open",
   "title": "Port the Flow authoring corpus",
   "type": "epic",
-  "updated_at": "2026-11-04T18:57:49Z"
+  "updated_at": "2026-11-04T19:20:55Z"
 }
