@@ -24,11 +24,15 @@
     {
       "text": "Implemented the unified example catalog harness on main. Added examples/README.md, test/examples/README.md, catalog.yml, catalog and loader support, catalog tests, the support ignore filter, and three ported manifest records. The catalog enforces stable slash IDs, registered categories, one README, one primary source, one paired test, unique assets, complete inventory, the :example tag, and setup_all loader use. The existing live-provider example is an explicit temporary exclusion for U15/U19. Verified catalog tests (7 passed), mix test.examples (7 passed), default selection (7 excluded), manifest tests (6 passed), compile warnings, formatting, and diff checks. Commit: 55c814d. Deferred assets: existing U9-U15 source groups remain deferred. Deviations: none. Remaining blockers: U9-U15 must register each ported example.",
       "timestamp": "2026-11-04T15:04:42Z"
+    },
+    {
+      "text": "Follow-up in 545eee2: the catalog now enforces category/NN_NN_lesson IDs, NN_chapter/NN_NN_lesson source and test paths, matching chapter prefixes, mirrored paths, sorted IDs, and intentional gaps. Catalog verification: 8 passed. Full offline examples: 35 passed.",
+      "timestamp": "2026-11-04T15:21:58Z"
     }
   ],
   "priority": 2,
   "status": "closed",
   "title": "Add the example catalog harness",
   "type": "task",
-  "updated_at": "2026-11-04T15:04:42Z"
+  "updated_at": "2026-11-04T15:21:58Z"
 }
