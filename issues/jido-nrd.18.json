@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "`Jido.hibernate(inst, pid, partition: p)` fails \"invalid control options\" even on a match. The one opts list goes to two validators.\n\nOwner: `jido.agent_server.activation`\nRoot cause: `lib/jido.ex:774-775`; `lifecycle.ex:149`\nClaims: agent-servers.B1\nRepro (probe file: id prefix): `20_b_agent_servers`: `agent-servers.B1`\nGuides: `guides/agent-servers/hibernate-thaw-and-activate.md`\n\nDone when: Jido.hibernate with a matching partition succeeds, and a wrong partition still returns :not_found.\n\nSource: guide-report triage, finding B18. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.18",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Fix the partition option on Jido.hibernate",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
