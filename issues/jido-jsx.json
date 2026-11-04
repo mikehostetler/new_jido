@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T17:41:58Z",
+  "description": "Move every example to a direct child of examples/, use one stable ordered naming scheme, update example tests and documentation links, add a layout guard, and verify the example suite. Deliver directly on local main as requested.",
+  "id": "jido-jsx",
+  "labels": [],
+  "priority": 2,
+  "status": "open",
+  "title": "Flatten examples into one catalog",
+  "type": "task",
+  "updated_at": "2026-11-04T17:41:58Z"
+}
