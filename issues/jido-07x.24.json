@@ -14,9 +14,15 @@
   "id": "jido-07x.24",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed in commit b5c23a5. Added the combined report runner, focused report tests, waiver target validation, Mix alias, and contributor guidance. Generated tmp/quality/quality.json and tmp/quality/quality.txt for clean revision b5c23a58e8c18839c96e99aaccecf002255453de. Both record outcome FAIL with one open finding: covenant-persistence-token-cleanup-race, owned by jido.persistence. This is expected KTD17 behavior; a later passing Covenant run did not erase the prior failure. Current evidence: all 10 required offline suites passed or were explicitly not applicable because their scheduled target directories do not exist yet; Covenant 323/323; package coverage 93.0817% (16374/17591); all component coverage rules passed; no waivers. Verification: 34 objective-quality tests passed, focused report tests 6 passed, mix quality.contract passed, clean mix quality.coverage passed, mix quality.report wrote matching JSON and text and returned nonzero for the recorded open finding, format passed, Reach architecture passed, Reach smells completed with 276 existing advisory findings. No lib/** or refs/** file changed. Remaining blocker: resolve or explicitly waive the recorded persistence cleanup race before the combined report can pass.",
+      "timestamp": "2026-11-04T14:53:31Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Generate and enforce the quality report",
   "type": "task",
-  "updated_at": "2026-11-04T14:41:47Z"
+  "updated_at": "2026-11-04T14:53:31Z"
 }
