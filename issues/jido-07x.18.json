@@ -12,9 +12,15 @@
   "id": "jido-07x.18",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed in f2c9a10. Changed mix.exs, bench/ai/**, test/bench/ai/**, the quality plan, and the source manifest. The manifest now ports the AI baseline benchmark tree and records post-baseline react_fresh_memory.exs at 65cc5fda0380c0b95fef955687495b8786d03e3b. Verification passed: 3 focused AI benchmark tests, 20 complete benchmark tests, both documented manual runners with two requests, 14 manifest/contract tests, formatting, and diff checks. No lib/** or refs/** changes. No deferred U18 assets, deviations, or remaining blockers.",
+      "timestamp": "2026-11-04T16:22:14Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Reconcile offline AI benchmarks",
   "type": "task",
-  "updated_at": "2026-11-04T16:18:12Z"
+  "updated_at": "2026-11-04T16:22:14Z"
 }
