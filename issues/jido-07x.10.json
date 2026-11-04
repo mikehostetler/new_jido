@@ -12,9 +12,15 @@
   "id": "jido-07x.10",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed in 545eee2. Added 15 numbered Flow execution lessons under examples/flow/02_execution with mirrored tests and individual source-manifest records. Wait tests use Jido.Exec.Test.WaitHost. Parallel tests use message barriers. Current API deviations: child Flow proof uses the compiled component, controlled execution uses Runic.Runner manual dispatch, and Action continuation tuples are asserted as unsupported. No assets were deferred. Verification: focused U10 16 passed before the path migration; combined numbered U9/U10 27 passed; catalog 8 passed; full examples 35 passed; manifest 6 passed; compile warnings, format, and diff checks passed.",
+      "timestamp": "2026-11-04T15:22:04Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port Action execution examples",
   "type": "task",
-  "updated_at": "2026-11-04T15:09:08Z"
+  "updated_at": "2026-11-04T15:22:04Z"
 }
