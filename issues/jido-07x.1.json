@@ -3,6 +3,7 @@
   "blocked_by": [],
   "blocks": [
     "jido-07x.2",
+    "jido-07x.21",
     "jido-07x.3",
     "jido-07x.4"
   ],
@@ -22,5 +23,5 @@
   "status": "closed",
   "title": "Establish the quality source manifest and runners",
   "type": "task",
-  "updated_at": "2026-11-03T21:26:28Z"
+  "updated_at": "2026-11-04T13:18:10Z"
 }
