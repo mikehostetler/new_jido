@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:21Z",
+  "description": "`Jido.Codec.encode/2` missing-catalog error has `details.path == [:call]`, with no component, field, or target name.\n\nOwner: `jido_action.codec` (`jido.flow`)\nRoot cause: `lib/jido/flow/codec/writer.ex:29-30,73,87-91`\nClaims: flow-data.B2\nRepro (probe file: id prefix): `10_a_flow_data`: `flow-data.B2`\nGuides: none\n\nDone when: details.path includes the component and field, and the message names the missing target.\n\nSource: guide-report triage, finding B33. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.33",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Add component and target to Codec encode catalog errors",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:21Z"
+}
