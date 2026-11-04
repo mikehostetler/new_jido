@@ -19,11 +19,15 @@
     {
       "text": "Completed in commit 2be-placeholder. Added test/system/runtime/action_flow with Flow value, Flow module, and Instruction equivalence plus TaskSupervisor cleanup. Added test/load/action_flow with 200 fixed concurrent workflows, result ownership, 200 caller-task shutdown checks, 200 supervised execution-task shutdown checks, and TaskSupervisor baseline restoration. Added a fresh-VM burn-in script and suite READMEs. Changed the jido_action test/system and test/load source-manifest records from deferred to ported at source commit 40ec1f0af3a373bae5e6d869017cc229c85aef92. Verification: system 1 passed; load 1 passed; two fresh-VM load runs passed; source manifest 6 passed; format passed; Reach architecture passed; Reach smells completed with 276 existing advisory findings. No assets were deferred. No lib/** or refs/** file changed.",
       "timestamp": "2026-11-04T14:55:54Z"
+    },
+    {
+      "text": "Correction: the completed commit is 4de5b59.",
+      "timestamp": "2026-11-04T14:55:56Z"
     }
   ],
   "priority": 2,
   "status": "closed",
   "title": "Port Action system and load checks",
   "type": "task",
-  "updated_at": "2026-11-04T14:55:54Z"
+  "updated_at": "2026-11-04T14:55:56Z"
 }
