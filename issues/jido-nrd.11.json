@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "JSON Schema lists `Joi.default/2` fields as `required`, so a model tool must supply them (`\"required\" =\u003e [\"order_id\", \"note\"]`, `strict: true`).\n\nOwner: `jido_action.validation` (`jido.action.validation`)\nRoot cause: `lib/jido/joi.ex:216` delegates to Zoi, `deps/zoi/lib/zoi/types/map.ex:24-25`; used at `lib/jido/ai/toolset.ex:166`\nClaims: actions.B2, ai.B10, start-here.B1, start-here.D6\nRepro (probe file: id prefix): `10_a_actions`: `actions.B2`; `40_d_ai`: `ai.B10`\nGuides: `guides/actions/schemas-validation.md:280`; `guides/ai/tools-skills-and-toolsets.livemd`\n\nDone when: A Joi.default field is not in required for authoring_contract and tool schemas, including a check of strict provider schemas.\n\nSource: guide-report triage, finding B11. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.11",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Stop listing defaulted fields as required in JSON Schema",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
