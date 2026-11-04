@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:21Z",
+  "description": "`json_schema/0` from `use Jido.Codec` gives Elixir names, not `:as` names (`postal_code`, not `postalCode`), and lists `omit: nil` fields as required.\n\nOwner: `jido_action.authoring` (`jido.codec.compiler`)\nRoot cause: `lib/jido/codec/compiler.ex:56`\nClaims: data.B3\nRepro (probe file: id prefix): `10_a_data`: `data.B3`\nGuides: `guides/data/versioned-documents.md:89`\n\nDone when: json_schema/0 uses :as names and does not require omitted or defaulted fields.\n\nSource: guide-report triage, finding B28. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.28",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Make Codec json_schema describe the wire shape",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:21Z"
+}
