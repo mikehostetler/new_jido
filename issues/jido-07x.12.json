@@ -8,14 +8,16 @@
   "blocks": [
     "jido-07x.20"
   ],
+  "closed_at": "2026-11-04T15:37:47Z",
+  "close_reason": "Ported 17 numbered basic and workflow lessons with 54 focused tests; full offline example suite 99 passed; catalog 8 passed; source manifest 6 passed; compile, format, and scope checks passed; no deferred assets or provider calls.",
   "created": "2026-11-03T21:18:37Z",
   "description": "## Objective\n\nAdd the basic Agent and workflow learning path.\n\n## Context\n\nPlan: `docs/plans/2026-11-03-1512-consolidated-quality-backpressure-plan.md`\nUnit: `U12`\nCovers: `R1, R2, R4; KTD1, KTD4, KTD6, KTD8.`\n\nImplement only this quality-import unit. Follow the plan decisions. Do not change `lib/**` or `../refs/**`. When a source assertion needs a product change, record the asset as deferred with the failing command.\n\n## Dependencies\n\n- Blocked by: jido-07x.8 (U8) — Add the example catalog harness must be complete; jido-07x.2 (U2) — Activate authoring and Covenant gates must be complete; jido-07x.5 (U5) — Port Action and Flow property checks must be complete.\n- Unblocks: jido-07x.20 (U20) — Enforce quality gates in CI and agent guidance must be complete.\n\n## Files\n\nRead split core `examples/01_basic/**`, `examples/02_workflow/**`, and matching tests at `21d0dd4c4da2f9c096fbd1cec9ad1d22dce95e61`. Add `examples/agent/basic/**`, `examples/agent/workflow/**`, and matching tests. Change the manifest.\n\n## Instructions\n\n1. Port all supported basic Agent and workflow examples.\n2. Keep typed commands, Plugins, Directives, supervision, routing, JSON definitions, sequential work, effects, parallel joins, batches, loops, nested Flows, and continuations.\n3. Mark split core LLM examples as superseded by the AI catalog.\n\n## Acceptance criteria\n\n- [ ] Every source example in the two groups has a manifest disposition.\n- [ ] Ported examples use current Agent, Flow, Plugin, and application boundaries.\n- [ ] No example calls a provider.\n\n## Verification\n\n- `mix test.examples test/examples/agent/basic test/examples/agent/workflow` exits with status `0`.\n\n## Handoff\n\nIn the Beadwork completion comment, list changed files, source manifest records, verification results, deferred assets, deviations from the plan, and remaining blockers.",
   "id": "jido-07x.12",
   "labels": [],
   "parent": "jido-07x",
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Port core basic and workflow examples",
   "type": "task",
-  "updated_at": "2026-11-04T15:30:09Z"
+  "updated_at": "2026-11-04T15:37:47Z"
 }
