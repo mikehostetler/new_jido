@@ -11,9 +11,15 @@
   "id": "jido-fjs.3",
   "labels": [],
   "parent": "jido-fjs",
+  "comments": [
+    {
+      "text": "Completed in b77a580. Moved all core_contract and broad AI contract tests under namespace owners, removed both legacy roots, renamed executable modules from JidoTest/JidoActionTest/Jido.AITest/Jido.AI.Contract to Jido.* and local support to Jido.Test.*, and moved contract fixtures into the compiled support root. Resolved the two Agent authoring files as dsl_authoring_contract_test.exs and validation_authoring_contract_test.exs. Added 40 stable behavior claims with canonical owner paths and Covenant traceability; validation rejects duplicate owners, missing component cases, repeated supplemental proof, and orphan groups. Verification passed: 3342 default tests with 508 excluded; Covenant 323/323 at 100%; component proof 15; quality contract 8; format and diff checks. ExDNA remains 39 groups/~817 lines. One stateful composition test was made synchronous after it passed alone but failed twice under full parallel load.",
+      "timestamp": "2026-11-04T20:34:29Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "U3 Flatten the default Jido test tree",
   "type": "task",
-  "updated_at": "2026-11-04T20:17:28Z"
+  "updated_at": "2026-11-04T20:34:29Z"
 }
