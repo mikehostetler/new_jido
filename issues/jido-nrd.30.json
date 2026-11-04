@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:21Z",
+  "description": "`Jido.Codec.Error.internal/3` reports `type: :validation_error, retryable?: false`. A clause order bug.\n\nOwner: `jido.error`\nRoot cause: `lib/jido/error.ex:1026` before `:1035`\nClaims: data.B2\nRepro (probe file: id prefix): `10_a_data`: `data.B2`\nGuides: none\n\nDone when: Codec.Error.internal/3 reports an internal type and matching retryable? value.\n\nSource: guide-report triage, finding B30. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.30",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Fix the type of Codec internal errors",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:21Z"
+}
