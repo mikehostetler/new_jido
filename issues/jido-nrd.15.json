@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "`ctx \u003c- context()` and `context()` in `output` expose `__jido_exec_max_concurrency__` and `__jido_exec_durable__`, and they are returned to the caller.\n\nOwner: `jido_action.execution` (`jido.execution`)\nRoot cause: `lib/jido/exec/value_resolver.ex:75`, unlike `exec/runtime.ex:16-24`\nClaims: flows.B1\nRepro (probe file: id prefix): `10_a_flows`: `flows.B1`\nGuides: `guides/actions/action-context.md:173`, which is false for this path today\n\nDone when: context() in bindings, params, and output exposes no __jido_exec_ keys.\n\nSource: guide-report triage, finding B15. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.15",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Strip internal keys from context() references",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
