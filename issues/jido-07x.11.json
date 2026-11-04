@@ -12,9 +12,15 @@
   "id": "jido-07x.11",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed in e3a37dc. Added 9 numbered supported lessons: 6 durability and 3 patterns. Added 14 executable skipped probes for delivery rules, DETS recovery, compaction, production Store, automatic recovery, audit trace, worker claim, fenced result, durable static ReAct audit, and all 5 cluster distribution contracts. Every source lesson has a manifest disposition. Ported ordering uses message barriers, process monitors, wait addressing, or managed hooks. Deviations: current public Jido.Exec and Runic.Runner APIs replace the removed Run, Store, Dispatcher, and wave APIs. Verification: focused supported examples 10 passed; catalog 8 passed; full examples 45 passed; manifest 6 passed; default deferred run excluded 14; explicit deferred run failed 14 of 14 as recorded; compile warnings, format, and diff checks passed. No lib or reference files changed.",
+      "timestamp": "2026-11-04T15:30:04Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port advanced Action examples",
   "type": "task",
-  "updated_at": "2026-11-04T15:22:12Z"
+  "updated_at": "2026-11-04T15:30:04Z"
 }
