@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "- **Claim:** N5-extra (found during this triage)\n- **Owner:** `jido.agent_server.activation`\n- **Observed:** without a `persistence:` option on `start_agent/3`, the Agent starts over an existing save with no conflict and commits are not saved: `no_option_over_save | %{live_state: %{n: 2}, stored: %{n: 1}}`, and `load_agent` returns `{:error, :not_found}`. `thaw/4` and `activate_agent/4` default to `:inherit` (`lib/jido.ex:408,788`), so entry points differ. `lifecycle.ex:19` defaults to `persistence: false`. `Jido.start_link/1` documents the option as \"Optional default persistence adapter\". The workaround is `agent_server: [persistence: :inherit]` on the instance.\n- **Repro:**\n\n```bash\nmix run --no-compile tmp/guide-reports/probes/20_b_agent_servers.exs 2\u003e\u00261 | grep -a '^N5-extra'\n```\n\n- **Guides:** `guides/agent-servers/hibernate-thaw-and-activate.md`, `guides/start-here/start-a-jido-instance.livemd` (\"Default persistence adapter\").\n- **Proposed task (P1, needs a decision):** \"Make instance persistence apply to start_agent, or state plainly that it does not\". This is a behaviour change if you choose the first.\n\nSource: guide-report triage, finding B03. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.3",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 1,
+  "status": "open",
+  "title": "Make instance persistence apply to start_agent, or state that it does not",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
