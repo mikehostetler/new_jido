@@ -11,9 +11,15 @@
   "id": "jido-nnq.3",
   "labels": [],
   "parent": "jido-nnq",
+  "comments": [
+    {
+      "text": "Completed on local main as ba24216. Added extension_test.exs, inline_hostile_test.exs, rejections_test.exs, and source_boundary_test.exs. Adapted source paths, Jido.Joi schemas, Jido.Expr.Operation, and current execution error phase fields. Extended JidoTest.AuthoringCompiler with an isolated diagnostic-return path; all dynamic source cases use unique reserved namespaces and verify module removal. Verification: focused mix test.authoring command passed 22 tests with seed 0 and warnings as errors; the Flow authoring directory passed 58 tests; the complete authoring lane passed 132 tests; the existing Agent evaluation contract passed 19 tests; format and diff checks passed. No lib or refs files changed. The test-helper extension is the only plan file-list deviation and preserves the required source diagnostic without adding another compiler helper. No deferred asset, follow-up ticket, or remaining blocker.",
+      "timestamp": "2026-11-04T19:11:05Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port Flow authoring diagnostics",
   "type": "task",
-  "updated_at": "2026-11-04T19:06:05Z"
+  "updated_at": "2026-11-04T19:11:05Z"
 }
