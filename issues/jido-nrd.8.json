@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "- **Claims:** ai.B1\n- **Owner:** `jido_ai.tools` (`jido.ai.tools`)\n- **Observed:** `status: :blocked, reason_code: :output, reason: \"tool use is required before a final answer\"`, while `:optional` and `:required` complete with the same model. `lib/jido/ai/toolset.ex:88` is `requirement_satisfied?(:per_turn, _tool_rounds, [_ | _]), do: false`.\n- **Why it needs a decision:** `test/jido/ai/tools/tool_boundaries_contract_test.exs:193` pins it, and `refs/jido_ai/lib/jido_ai/toolset.ex:97` has the same code, so this is not a port regression. No doc gives it a purpose, no test runs it to an end state, and the obligations do not define it. A request with this option always spends model calls and then fails.\n- **Repro:**\n\n```bash\nmix run --no-compile tmp/guide-reports/probes/01_named.exs 2\u003e\u00261 | grep -a '^N3' | cut -c1-90\n```\n\n- **Guide:** `guides/ai/tools-skills-and-toolsets.livemd:212,215`.\n- **Proposed task (P2):** \"Remove :per_turn or define its terminal condition\". I recommend removal unless you have a use for it, since nothing can reach a final answer today.\n\nDone when: The decision is recorded and :per_turn is either removed or can reach a final answer, with a test that runs it to an end state.\n\nSource: guide-report triage, finding B08. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.8",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Remove :per_turn or define its terminal condition",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
