@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "- **Claim:** composition.B3\n- **Owner:** `jido.agent_server.composition`\n- **Observed:** destination member restarting under traffic: owner stops with `{:shutdown, {:topology_delivery_failed, :agent_not_found}}` in 7/40 runs on the rerun. All members are gone and nothing restarts (`activation: :shutdown, whereis_pid: false`). Worker crashes alone trigger it in 5/25. Root output in the same window only marks an effect failed (15/15 alive).\n- **Cause:** `lib/jido/agent_server/topology.ex:287-290`, `lib/jido/agent_server.ex:1324,1331`, and `significant` with `auto_shutdown: :any_significant` in `supervisor.ex:46-54`.\n- **Repro:**\n\n```bash\nmix run --no-compile tmp/guide-reports/probes/30_c_composition2.exs 2\u003e\u00261 | grep -a '^composition.B3'\n```\n\n- **Guides:** `guides/composition/connect-agent-outputs.livemd:275` (omits that the stop is permanent). `guides/composition/topology-reconciliation.md:142` (\"That member restarts alone. Other members keep running.\") is contradicted by this.\n- **Proposed task (P1):** \"Member output delivery failure must not end the topology\". Done when a restart-window delivery failure has the same effect as a root delivery failure, or a bounded retry, with a race test.\n\nSource: guide-report triage, finding B04. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.4",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 1,
+  "status": "open",
+  "title": "Member output delivery failure must not end the topology",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
