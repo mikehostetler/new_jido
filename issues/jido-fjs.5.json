@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T19:20:37Z",
+  "description": "Unit: U5\nPlan: docs/plans/2026-11-04-1314-refactor-jido-test-tree-plan.md#u5-reorganize-system-load-benchmark-live-and-deferred-lanes\n\nOutcome\nSystem, load, benchmark, live, and deferred assets use their primary Jido.* owner paths, and all catalogs and CI commands use those paths.\n\nRequirements and decisions\nR2, R4, R5, R8-R13; KTD1-KTD3, KTD6-KTD8.\n\nAffected surfaces\ntest/system/**; test/load/**; test/bench/**; test/live/**; test/quality/deferred/**; benchmark and load catalogs; .github/workflows/ci.yml; mix.exs; quality maps; source-manifest targets; and lane READMEs.\n\nImplementation direction\nMove runtime system and load files below jido/agent_server or jido/exec. Split benchmark action_flow assets among Flow compile, Exec runtime, and AI ReAct owners. Move Signal and AI benchmark and live assets under explicit jido paths. Move deferred Action/Flow and Signal probes below test/quality/deferred/jido without changing expected failures or dispositions. Update catalogs, scheduled commands, aliases, evidence paths, and current lane documentation atomically.\n\nAcceptance\nSystem, load, and benchmark smoke aliases run all registered families. Extended CI commands resolve every runner. Live and service tests stay opt-in. Deferred probes stay excluded with the same reasons. Catalog validation finds each evidence file and no duplicate family ID.\n\nVerification\nmix test.system --warnings-as-errors\nmix test.load --warnings-as-errors\nmix test.bench --warnings-as-errors\nmix test test/quality/ci_workflow_test.exs --seed 0\nmix quality.contract\nmix format --check-formatted\n\nCompletion signal\nAll registered operational families resolve final paths, selection policy is unchanged, and U6 can start.",
+  "id": "jido-fjs.5",
+  "labels": [],
+  "parent": "jido-fjs",
+  "priority": 2,
+  "status": "open",
+  "title": "U5 Reorganize operational test lanes",
+  "type": "task",
+  "updated_at": "2026-11-04T19:20:37Z"
+}
