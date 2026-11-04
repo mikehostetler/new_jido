@@ -1,5 +1,5 @@
 {
-  "assignee": "",
+  "assignee": "Mike Hostetler",
   "blocked_by": [],
   "blocks": [],
   "created": "2026-11-03T21:18:37Z",
@@ -7,8 +7,8 @@
   "id": "jido-07x",
   "labels": [],
   "priority": 1,
-  "status": "open",
+  "status": "in_progress",
   "title": "Import consolidated quality backpressure",
   "type": "epic",
-  "updated_at": "2026-11-04T13:21:08Z"
+  "updated_at": "2026-11-04T14:00:35Z"
 }
