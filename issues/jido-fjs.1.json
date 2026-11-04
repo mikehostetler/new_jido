@@ -11,9 +11,15 @@
   "id": "jido-fjs.1",
   "labels": [],
   "parent": "jido-fjs",
+  "comments": [
+    {
+      "text": "Completed in cc6d396. Consolidated property and fuzz evidence into one shared harness and report, removed duplicate reporters and inactive contract vocabulary, removed unused authoring and layout support, and added the refactor ledger. Verification: default 3337 passed/508 excluded; authoring 134 passed; bench 28 passed; property 37 passed/13 excluded; fuzz 13 passed/37 excluded; quality contract 8 passed; format and diff checks passed; ExDNA improved from 59 groups/2348 lines to 42 groups/1592 lines.",
+      "timestamp": "2026-11-04T19:59:35Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "U1 Consolidate property evidence infrastructure",
   "type": "task",
-  "updated_at": "2026-11-04T19:43:32Z"
+  "updated_at": "2026-11-04T19:59:35Z"
 }
