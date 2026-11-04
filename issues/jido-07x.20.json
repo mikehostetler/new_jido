@@ -19,9 +19,15 @@
   "id": "jido-07x.20",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed in 0450e92 on main. Added .github/workflows/ci.yml, the CI workflow contract test, test.all, fresh-process test.ci execution, fixed seed 0, contributor command guidance, a line-specific Dialyzer baseline with unused-filter enforcement, a 17-clone ExDNA brownfield ceiling, and an explicit Credo blocking/advisory policy. Resolved covenant-persistence-token-cleanup-race by moving the token test Agent under ExUnit supervision. No source-manifest record changed. Verification passed: mix test.all; mix quality; mix quality.contract; 250 repeated token-suite runs (1,000 tests); fixed-seed full Covenant 3,334 passed/457 excluded and 323/323 obligations; clean mix quality.coverage at 93.1783% across 40 components and ten suite contributions; clean mix quality.report with all ten suites passing, zero open findings, and zero waivers; workflow tests, compile warnings, formatting, and diff checks. Live provider success was not run without an approved key; service live-host limits remain documented. No lib/** or refs/** change. Deviation: static debt uses explicit no-new-debt baselines because the plan forbids existing lib cleanup. Remaining blocker: none for U20.",
+      "timestamp": "2026-11-04T17:05:08Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Enforce quality gates in CI and agent guidance",
   "type": "task",
-  "updated_at": "2026-11-04T16:24:56Z"
+  "updated_at": "2026-11-04T17:05:08Z"
 }
