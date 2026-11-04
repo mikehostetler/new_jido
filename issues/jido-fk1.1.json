@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T22:31:12Z",
+  "description": "In one isolated worktree at jido HEAD 8b936d91d5d40230fe7a9c59d882157a3aa4ce6c, run 10 sequential Elixir quality rounds. Each round must inspect a bounded surface, confirm only evidence-backed findings, apply only objective fixes or eligible safe refinements, run focused proof, and record the result. Finish with the configured repository gates and independent verification. Do not change public contracts, dependencies, thresholds, ignores, or the dirty main tree.",
+  "id": "jido-fk1.1",
+  "labels": [],
+  "parent": "jido-fk1",
+  "priority": 2,
+  "status": "open",
+  "title": "Run 10 quality review and fix rounds",
+  "type": "task",
+  "updated_at": "2026-11-04T22:31:12Z"
+}
