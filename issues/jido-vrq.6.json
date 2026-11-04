@@ -2,14 +2,15 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-04T22:08:13Z",
   "created": "2026-11-04T21:57:37Z",
   "description": "Write all guide_toc entries under guides/flow-data from lib/ source. Uncommitted on main.",
   "id": "jido-vrq.6",
   "labels": [],
   "parent": "jido-vrq",
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Guides: flow-data",
   "type": "task",
-  "updated_at": "2026-11-04T21:57:37Z"
+  "updated_at": "2026-11-04T22:08:13Z"
 }
