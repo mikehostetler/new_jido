@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:21Z",
+  "description": "`persistence_reason` is always `:manual` from AgentServer, and `upgrade_agent`'s `:stored_upgrade` normalizes to `nil`.\n\nOwner: `jido.telemetry`\nRoot cause: `lifecycle.ex:828`; `persistence.ex:324-325,628`; `telemetry/semantic.ex:18`\nClaims: operations.B2, plugins.B3\nRepro (probe file: id prefix): `40_d_operations`: `operations.B2`; `30_c_plugins`: `plugins.B3`\nGuides: `guides/operations/metrics-and-open-telemetry.md`; `guides/plugins/plugin-persistence.md:82`\n\nDone when: Create, commit, hibernate, and upgrade writes report distinct allowed reasons.\n\nSource: guide-report triage, finding B21. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.21",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Report real persistence reasons from AgentServer and upgrades",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:21Z"
+}
