@@ -11,9 +11,15 @@
   "id": "jido-07x.19",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed in 253f540. Added the explicit JIDO_LIVE_OPENAI_API_KEY-gated provider test, allow-listed trace writer, redaction unit test, live README, manifest disposition, and plan acceptance marks. Verification passed: 15 manifest/contract/redaction tests; the live file is excluded by default; explicit selection without the key fails with the required message before a provider call; formatting and diff checks pass. No lib/** or refs/** changes. The provider-backed success path was not run because no approved test credential was supplied. No source asset was deferred and no product blocker was found.",
+      "timestamp": "2026-11-04T16:24:52Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port the AI live provider check",
   "type": "task",
-  "updated_at": "2026-11-04T16:22:17Z"
+  "updated_at": "2026-11-04T16:24:52Z"
 }
