@@ -5,6 +5,8 @@
     "jido-07x.27"
   ],
   "blocks": [],
+  "closed_at": "2026-11-04T17:38:59Z",
+  "close_reason": "All final objective quality acceptance checks pass on clean main",
   "created": "2026-11-04T16:12:45Z",
   "description": "## Objective\n\nProve that the completed quality system satisfies the repository quality contract and the revised benchmark layout.\n\n## Scope\n\nRun the full offline quality matrix. Reconcile CI, Mix aliases, agent guidance, READMEs, manifests, component proof, coverage baselines, and quality reports with the final test tree. Keep provider and external service checks explicit and opt-in.\n\nDo not change lib or refs. Do not weaken a threshold to make a failure pass.\n\n## Acceptance criteria\n\n- There is no tracked top-level bench folder or reference to one.\n- All benchmark code and documents are under test/bench.\n- Required offline CI runs unit, authoring, Covenant, property, fuzz, system, load, example, benchmark smoke, coverage, and architecture checks.\n- Live provider and external service checks stay opt-in.\n- All public components have complete proof or an allowed and specific not-applicable reason.\n- Package and component coverage meet the objective thresholds.\n- Covenant obligation coverage is 100 percent.\n- The final quality report has no required finding.\n- Documentation commands match Mix aliases and actual paths.\n- The epic completion comment contains exact commands, counts, coverage, deferred cases, and final Git revision.\n\n## Verification\n\nRun mix format --check-formatted, mix compile --warnings-as-errors, mix test.ci, mix quality.coverage, mix quality.report, mix covenant.check, mix reach.check --arch --smells, and mix test.bench.\n\n## Handoff\n\nRecord all commands and results. Do not close this task or the epic while a required check is failing or required evidence is missing.",
   "id": "jido-07x.28",
@@ -17,7 +19,7 @@
     }
   ],
   "priority": 1,
-  "status": "open",
+  "status": "closed",
   "title": "Run final objective quality acceptance",
   "type": "task",
   "updated_at": "2026-11-04T17:38:59Z"
