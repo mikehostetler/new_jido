@@ -3,7 +3,9 @@
   "blocked_by": [
     "jido-fjs.5"
   ],
-  "blocks": [],
+  "blocks": [
+    "jido-fjs.7"
+  ],
   "created": "2026-11-04T19:20:43Z",
   "description": "Unit: U6\nPlan: docs/plans/2026-11-04-1314-refactor-jido-test-tree-plan.md#u6-normalize-the-numbered-example-lane\n\nOutcome\nThe numbered public lesson order stays stable while example support modules, loaders, and links use final names and paths.\n\nRequirements and decisions\nR2, R4, R8, R10-R13; KTD1-KTD3, KTD6, KTD8.\n\nAffected surfaces\ntest/examples/**; examples/**; shared example support under test/support; test/examples/catalog.yml; and current README links.\n\nImplementation direction\nKeep the numbered directory and catalog structure. Rename executable modules to production Jido.* owners and shared fixtures to Jido.Test.*. Update lane-local loaders and common runtime support. Preserve :example and :peer together on both peer examples. Keep repeated code when it is necessary for standalone teaching value, and record any deletion under KTD6.\n\nAcceptance\nThe catalog resolves every numbered lesson and current link. Examples stay out of the default suite and run through test.examples. Both peer cases run through test.peer and remain example lessons. Standalone lessons use documented support and no old module name.\n\nVerification\nmix test.examples --warnings-as-errors\nmix test.peer --warnings-as-errors\nmix test test/examples/catalog_test.exs --seed 0\nmix format --check-formatted\n\nCompletion signal\nThe catalog, examples, and peer cases pass with original lesson order and final helper names, and U7 can start.",
   "id": "jido-fjs.6",
