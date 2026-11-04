@@ -11,9 +11,15 @@
   "id": "jido-fjs.2",
   "labels": [],
   "parent": "jido-fjs",
+  "comments": [
+    {
+      "text": "Completed in 131d120. The test compiler now uses only lib and test/support. Shared helpers and fixtures use owner-specific test/support/jido_* paths and Jido.Test.* names. The inline consumer moved to test/consumers. Duplicate OpenTelemetry tracers, public API documentation helpers, and AgentServer resource fixtures were merged. Verification passed: compile with warnings as errors; default 3337 passed/508 excluded; Covenant 323/323; authoring 134; property 37/13 excluded; fuzz 13/37 excluded; examples 260; system 5/7 excluded; load 3; peer 7/3838 excluded; bench 28; format and diff checks. ExDNA improved to 39 clone groups and 817 duplicated lines.",
+      "timestamp": "2026-11-04T20:16:59Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "U2 Consolidate shared test support",
   "type": "task",
-  "updated_at": "2026-11-04T20:00:06Z"
+  "updated_at": "2026-11-04T20:16:59Z"
 }
