@@ -55,11 +55,15 @@
     {
       "text": "Copied the verified quality candidate into the dirty main working folder without changing guides/. All five transferred files match the isolated worktree hashes. Main-folder focused verification: 14 tests passed, formatter passed, quality backlog check passed. No commit was created; isolated worktree retained.",
       "timestamp": "2026-11-04T23:06:56Z"
+    },
+    {
+      "text": "Removed the isolated worktree after confirming that all five quality files match the copies in main. Branch jido-fk1.1/quality-climb remains. Main working-folder changes are uncommitted.",
+      "timestamp": "2026-11-04T23:09:07Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Run 10 quality review and fix rounds",
   "type": "task",
-  "updated_at": "2026-11-04T23:06:56Z"
+  "updated_at": "2026-11-04T23:09:07Z"
 }
