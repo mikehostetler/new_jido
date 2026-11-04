@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:21Z",
+  "description": "Signal extension error rejects `%URI{}` and `%DateTime{}` with a message listing URI and Timestamp as allowed.\n\nOwner: `jido_action.authoring` (`jido.signal`)\nRoot cause: `lib/jido/signal.ex:644`\nClaims: signals.D4\nRepro (probe file: id prefix): `40_d_signals`: `signals.D4`\nGuides: none\n\nDone when: The message lists only kinds the check accepts.\n\nSource: guide-report triage, finding B35. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.35",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Correct the Signal extension value error text",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:21Z"
+}
