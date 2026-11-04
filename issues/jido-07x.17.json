@@ -11,9 +11,15 @@
   "id": "jido-07x.17",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed in b0f036d. Added opt-in Redis, PostgreSQL, MinIO, and Bedrock service families plus exact prerequisites and commands. Redis and PostgreSQL use owned Docker containers, random localhost ports, test-only credentials, Store contract concurrency checks, and verified cleanup. MinIO uses only explicit JIDO_SYSTEM_MINIO_* test configuration, creates a random bucket, and owns object and bucket cleanup; it is skipped when those values are absent. Bedrock is explicitly deferred pending bedrock-kv/bedrock#319 while local adapter tests remain active. Updated Mix support filters, the source manifest, and the plan. Verification: full service suite 4 passed/3 skipped; focused Redis 2 passed; focused PostgreSQL 2 passed; MinIO without credentials 2 skipped; Bedrock 1 skipped; normal selection excluded all 7; source and quality contracts 14 passed; no owned Docker containers remained; warnings-as-errors, format, diff check, and no lib or refs changes passed. Deferred assets: Bedrock pressure and live MinIO execution in this host environment. Deviations: ported focused current Store contracts instead of the legacy duplicated scenario matrix. Remaining blockers: MinIO requires a dedicated service and Bedrock requires the upstream fix.",
+      "timestamp": "2026-11-04T16:18:04Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Port opt-in external service checks",
   "type": "task",
-  "updated_at": "2026-11-04T16:13:37Z"
+  "updated_at": "2026-11-04T16:18:04Z"
 }
