@@ -51,11 +51,15 @@
     {
       "text": "Independent verification: PASS for the uncommitted candidate at base 8b936d9 plus source diff sha256 666d59a04794ecfca106868fd9cd0bfaea3cde26b637e27936167619e47202dd. Combined focused tests 14 passed; full formatter and git diff checks passed; quality CSV validation passed. EXQ-0003 remains open for owner judgment. Task stays in progress pending commit authority.",
       "timestamp": "2026-11-04T22:55:54Z"
+    },
+    {
+      "text": "Copied the verified quality candidate into the dirty main working folder without changing guides/. All five transferred files match the isolated worktree hashes. Main-folder focused verification: 14 tests passed, formatter passed, quality backlog check passed. No commit was created; isolated worktree retained.",
+      "timestamp": "2026-11-04T23:06:56Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Run 10 quality review and fix rounds",
   "type": "task",
-  "updated_at": "2026-11-04T22:55:54Z"
+  "updated_at": "2026-11-04T23:06:56Z"
 }
