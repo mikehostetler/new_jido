@@ -6,14 +6,16 @@
   "blocks": [
     "jido-fjs.6"
   ],
+  "closed_at": "2026-11-04T20:50:37Z",
+  "close_reason": "Moved local lifecycle proof to system owners, unified load and benchmark assets under a 10-family perf catalog, moved service and live checks to external owners, moved all deferred probes out of quality, registered 66 proof claims, and passed every U5 gate in commit 69189f2.",
   "created": "2026-11-04T19:20:37Z",
   "description": "Unit: U5\nPlan: docs/plans/2026-11-04-1314-refactor-jido-test-tree-plan.md#u5-reorganize-system-perf-and-external-lanes\n\nOutcome\nSystem, perf, and external proof use clear ownership lanes, and catalogs and CI use final paths.\n\nRequirements and decisions\nR2, R4, R5, R8-R13, R16, R17; KTD1-KTD3, KTD6-KTD9.\n\nAffected surfaces\ntest/system/**; test/load/**; test/bench/**; test/live/**; test/quality/deferred/**; test/perf/**; test/external/**; perf catalogs; CI; mix.exs; quality maps; manifest targets; and lane READMEs.\n\nImplementation direction\nKeep local OTP and lifecycle proof under system/jido_\u003cnamespace\u003e. Move load and benchmark assets to perf/jido_\u003cnamespace\u003e; use profiles or tags for load versus benchmark execution. Move live AI and service proof to external/\u003cowner\u003e and keep it opt-in. Move each useful deferred probe to its owning lane with existing exclusion and disposition. Remove non-useful executable probes after recording the gap. Register lifecycle, boundary, and capacity claims as canonical when only these lanes prove them. Link repeated runtime claims to their canonical owner as supplemental evidence. Update all active consumers atomically.\n\nAcceptance\nSystem, load, and benchmark aliases run registered families from system and perf. Live and service stay opt-in under external. Quality contains no executable deferred tests. Each deferred probe has an owner or backlog record. Catalogs resolve every evidence file. Each lifecycle, boundary, capacity, and runtime claim has one canonical owner, and the registry has no orphan group.\n\nVerification\nmix test.system --warnings-as-errors\nmix test.load --warnings-as-errors\nmix test.bench --warnings-as-errors\nmix test test/quality/ci_workflow_test.exs test/quality/component_proof_test.exs --seed 0\nmix quality.contract\nmix format --check-formatted\n\nCompletion signal\nSystem and perf pass, external stays opt-in, deferred proof has an owner, claim ownership is complete, and U6 can start.",
   "id": "jido-fjs.5",
   "labels": [],
   "parent": "jido-fjs",
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "U5 Reorganize system perf and external proof",
   "type": "task",
-  "updated_at": "2026-11-04T20:41:07Z"
+  "updated_at": "2026-11-04T20:50:37Z"
 }
