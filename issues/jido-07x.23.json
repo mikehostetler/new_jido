@@ -11,9 +11,15 @@
   "id": "jido-07x.23",
   "labels": [],
   "parent": "jido-07x",
+  "comments": [
+    {
+      "text": "Completed in commits 674c59d and df3f10b. Added ExCoveralls, per-suite JSON and Coverdata exports, source-path plus line union, primary and shared Covenant component attribution, total and unique suite contribution, fixed threshold checks, baseline regression checks, and ignored tmp/quality/coverage reports. Added coveralls.json, coverage_baseline.json, coverage tests and support, contract registry and documentation. Fixed the OTP 29 peer coverage harness to use stable application BEAM paths. Clean baseline revision: 674c59de44460856ca8fb2433b338ea80605d25b. Clean package baseline: 93.076% (16373/17591). All 40 components exceed 80%; lowest are jido_ai.observability at 81.8372% and jido_ai.react at 82.1918%. Normal gate result: 93.0817% (16374/17591), PASS. Verification: 28 focused contract/component/coverage tests passed; peer coverage 4 passed; mix quality.contract passed; mix quality.coverage passed; format, diff, and Reach architecture checks passed. No lib/** or refs/** file changed. Deviation: shared modules contribute to all Covenant components that declare them, while component_proof.yml keeps one primary module owner and package lines count once.",
+      "timestamp": "2026-11-04T14:41:41Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Measure package component and suite coverage",
   "type": "task",
-  "updated_at": "2026-11-04T14:14:27Z"
+  "updated_at": "2026-11-04T14:41:41Z"
 }
