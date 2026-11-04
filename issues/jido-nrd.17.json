@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "`list_agents/2` and `agent_count/2` raise `ArgumentError: unknown registry` on a stopped instance, unlike `whereis_agent` and `stop_agent`.\n\nOwner: `jido.agent_server.activation`\nRoot cause: `lib/jido.ex:716-718`\nClaims: agent-servers.B4, operations.B3\nRepro (probe file: id prefix): `40_d_operations`: `operations.B3`\nGuides: none\n\nDone when: Both functions match their specs on stopped and never-started instances.\n\nSource: guide-report triage, finding B17. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.17",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Return an error from list_agents and agent_count on a stopped instance",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
