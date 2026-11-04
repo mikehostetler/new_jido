@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "`deliver_wait/4` doc says \"Retry the same Signal and wait ID\", but a retry after success returns `{:error, :not_waiting}` (20/20), so a lost reply looks like failure.\n\nOwner: `jido.agent_server.handoff`\nRoot cause: `lib/jido/agent_server.ex:724,1426-1427`\nClaims: durability.D1\nRepro (probe file: id prefix): `20_b_durability`: `durability.D1`\nGuides: `guides/durability/durable-turns-and-flows.livemd`\n\nDone when: A retry with the same Signal and wait ID after success is idempotent, or the doc states the :not_waiting result.\n\nSource: guide-report triage, finding B16. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.16",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Make deliver_wait retry after success match its doc",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
