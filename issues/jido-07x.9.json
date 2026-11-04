@@ -16,11 +16,15 @@
     {
       "text": "Ported all eight Action compilation example IDs to the unified catalog. Added examples/flow/compilation sources and READMEs, eight paired tests, catalog entries, and nine manifest dispositions. Adapted old forms/Registry/Zoi contracts to current components/Jido.Codec/Jido.Catalog/Jido.Joi contracts and kept the documented exact outputs and dependency data. Verified focused examples (11 passed), full mix test.examples (18 passed), catalog (7 passed), manifest (6 passed), compile warnings, formatting, diff checks, and no separate-package application module. Commit: 359ac1b. Deferred assets: none in this group. Deviations: current validation asserts stable messages and detail fields because the old reason field no longer exists.",
       "timestamp": "2026-11-04T15:09:01Z"
+    },
+    {
+      "text": "Follow-up in 545eee2: moved all eight lessons to examples/flow/01_compilation/01_NN_name and mirrored test paths. The 01_08 gap remains intentional. Numbered Flow verification passed in the 27-test combined U9/U10 run.",
+      "timestamp": "2026-11-04T15:22:00Z"
     }
   ],
   "priority": 2,
   "status": "closed",
   "title": "Port Action compilation examples",
   "type": "task",
-  "updated_at": "2026-11-04T15:09:01Z"
+  "updated_at": "2026-11-04T15:22:00Z"
 }
