@@ -3,7 +3,9 @@
   "blocked_by": [
     "jido-07x.25"
   ],
-  "blocks": [],
+  "blocks": [
+    "jido-07x.28"
+  ],
   "created": "2026-11-04T16:12:38Z",
   "description": "## Objective\n\nClose remaining objective test gaps for public Jido components after the import work is complete.\n\n## Scope\n\nUse the quality contract, component proof map, Covenant records, authoring suite, and line coverage report to find missing unit, Covenant fuzz, property, JSON, DSL, example, load, and benchmark evidence. Add focused tests for supported public behavior. Record unsupported or product-blocked cases with an exact reason and reproduction command.\n\nDo not change lib or refs.\n\n## Acceptance criteria\n\n- Every public Jido module maps to one primary Covenant component.\n- Every component has required proof or an allowed not-applicable reason.\n- Every supported JSON or DSL authoring form has valid, invalid, normalization, and semantic-equivalence cases.\n- Fuzz and property tests for public component APIs use recorded seeds and support replay.\n- Fuzz checks cover malformed, boundary, nested, and unknown input where the API accepts authored data.\n- Unit tests cover important success, error, and cleanup branches found by the coverage report.\n- Package line coverage is at least 90 percent.\n- Every component line coverage is at least 80 percent and does not regress beyond the quality contract.\n- Covenant obligation coverage is 100 percent.\n- The quality report has no missing, stale, unowned, or unresolved required evidence.\n\n## Verification\n\nRun mix test.ci, mix quality.coverage, mix covenant.check, and mix quality.report.\n\n## Handoff\n\nRecord new tests, components, seeds, coverage changes, commands, results, and deferred product gaps in the completion comment.",
   "id": "jido-07x.27",
