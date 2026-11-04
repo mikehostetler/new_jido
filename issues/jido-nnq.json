@@ -2,6 +2,7 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [
+    "jido-fjs",
     "jido-fjs.1"
   ],
   "created": "2026-11-04T18:57:49Z",
@@ -12,5 +13,5 @@
   "status": "open",
   "title": "Port the Flow authoring corpus",
   "type": "epic",
-  "updated_at": "2026-11-04T19:20:55Z"
+  "updated_at": "2026-11-04T19:21:12Z"
 }
