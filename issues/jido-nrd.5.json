@@ -1,0 +1,15 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-04T23:42:20Z",
+  "description": "- **Claim:** built-in-plugins.B3\n- **Owner:** `jido.plugin.sensor_manager`\n- **Observed:** with `retry_delay_ms: 5000`, 21,852 starts in 1 s and 5 MB of logs. The AgentServer stays alive and the loop never ends. Only a failed *start* waits for `:retry_delay_ms`.\n- **Cause:** `lib/jido/plugin/sensor_manager/runtime/controller.ex:67-72,110-114`\n- **Repro:**\n\n```bash\nmix run --no-compile tmp/guide-reports/probes/30_c_builtin.exs 2\u003e\u00261 | grep -a '^built-in-plugins.B3'\n```\n\n- **Guide:** `guides/built-in-plugins/managed-sensors.livemd:206` (\"restarts at once, with no delay and no limit\").\n- **Proposed task (P2):** \"Apply retry delay and a limit to sensor crash restarts\".\n\nDone when: A crash-looping sensor waits for the retry delay, the restart rate is bounded, and a test pins it.\n\nSource: guide-report triage, finding B05. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
+  "id": "jido-nrd.5",
+  "labels": [],
+  "parent": "jido-nrd",
+  "priority": 2,
+  "status": "open",
+  "title": "Apply retry delay and a limit to sensor crash restarts",
+  "type": "bug",
+  "updated_at": "2026-11-04T23:42:20Z"
+}
