@@ -2,6 +2,7 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-05T12:47:16Z",
   "created": "2026-11-04T23:42:21Z",
   "description": "Directive validation errors have mixed shapes: raw `[%Zoi.Error{}]` lists and bare tuples, not `Jido.Error`. Leaks a dependency type.\n\nOwner: `jido.agent`; `jido.plugin.scheduler`; `jido.plugin.audit`\nRoot cause: `lib/jido/agent/directive.ex:57-59`; `plugin/scheduler/schedule.ex:24-25`; `plugin/audit/record.ex:39-40`\nClaims: plugins.B1, built-in-plugins.B2\nRepro (probe file: id prefix): `30_c_plugins`: `plugins.B1`; `30_c_builtin`: `built-in-plugins.B2`\nGuides: `guides/plugins/plugin-custom-directives.livemd`; `guides/built-in-plugins/scheduler.livemd`, both teach matching on these shapes\n\nDone when: Directive schema, Scheduler, and Audit validation return Jido.Error values, with no raw Zoi.Error in the public result.\n\nSource: guide-report triage, finding B24. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.24",
@@ -14,7 +15,7 @@
     }
   ],
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Normalize Directive validation errors to Jido.Error",
   "type": "bug",
   "updated_at": "2026-11-05T12:47:16Z"
