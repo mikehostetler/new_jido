@@ -7,9 +7,15 @@
   "id": "jido-nrd.32",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 244a0a9. ValidationError :non_portable_term.",
+      "timestamp": "2026-11-05T12:52:25Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Return a structured error for non-portable durable context",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:21Z"
+  "updated_at": "2026-11-05T12:52:25Z"
 }
