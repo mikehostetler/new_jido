@@ -7,9 +7,15 @@
   "id": "jido-nrd.15",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 04a53da.",
+      "timestamp": "2026-11-05T12:52:25Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Strip internal keys from context() references",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T12:52:25Z"
 }
