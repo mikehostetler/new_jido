@@ -7,9 +7,15 @@
   "id": "jido-nrd.36",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in ce30ce4 for Agent model calls. Selection.client!/1 still raises for direct callers and Jido.AI.Actions.Embed.",
+      "timestamp": "2026-11-05T12:42:42Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Return a failed reply for an invalid AI client",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:21Z"
+  "updated_at": "2026-11-05T12:42:42Z"
 }
