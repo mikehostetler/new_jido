@@ -7,9 +7,15 @@
   "id": "jido-nrd.33",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 257e1a6. Flow-level schema and output errors still have no path prefix.",
+      "timestamp": "2026-11-05T12:50:48Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Add component and target to Codec encode catalog errors",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:21Z"
+  "updated_at": "2026-11-05T12:50:48Z"
 }
