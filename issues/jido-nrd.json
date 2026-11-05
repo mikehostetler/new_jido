@@ -11,11 +11,15 @@
     {
       "text": "All 38 children handled on local branch jido-nrd/triage-fixes in one checkout, per the owner's no-worktree instruction. Final mix test.ci, mix quality, quality.coverage, quality.report, guide checks and mix docs pass.",
       "timestamp": "2026-11-05T13:52:04Z"
+    },
+    {
+      "text": "Landed as squash commit 3519c7b on main. SHAs in the child tickets are on the unpushed local branch jido-nrd/triage-fixes.",
+      "timestamp": "2026-11-05T14:00:32Z"
     }
   ],
   "priority": 1,
   "status": "closed",
   "title": "Fix library defects from guide triage",
   "type": "epic",
-  "updated_at": "2026-11-05T13:52:04Z"
+  "updated_at": "2026-11-05T14:00:32Z"
 }
