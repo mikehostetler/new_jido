@@ -7,9 +7,15 @@
   "id": "jido-nrd.21",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in e495a7c. Plugin dump context :reason changes too.",
+      "timestamp": "2026-11-05T12:50:47Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Report real persistence reasons from AgentServer and upgrades",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:21Z"
+  "updated_at": "2026-11-05T12:50:47Z"
 }
