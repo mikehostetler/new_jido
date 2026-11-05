@@ -6,9 +6,15 @@
   "description": "Fix the 38 confirmed library bugs from triaging the guide reports' Possible bugs and Doc conflicts lists, against main at 8b936d9. Each child is one finding, ranked by severity: B01 is S1, B02-B08 are S2, B09-B36 are S3, B37-B38 are S4. Findings document: tmp/guide-reports/triage-findings.md (gitignored, main checkout). Use one worktree per child. Commit the uncommitted guides before a fix edits them. The design questions, doc bundles, and guide corrections in that document are not tracked here.",
   "id": "jido-nrd",
   "labels": [],
+  "comments": [
+    {
+      "text": "All 38 children handled on local branch jido-nrd/triage-fixes in one checkout, per the owner's no-worktree instruction. Final mix test.ci, mix quality, quality.coverage, quality.report, guide checks and mix docs pass.",
+      "timestamp": "2026-11-05T13:52:04Z"
+    }
+  ],
   "priority": 1,
   "status": "in_progress",
   "title": "Fix library defects from guide triage",
   "type": "epic",
-  "updated_at": "2026-11-05T12:29:24Z"
+  "updated_at": "2026-11-05T13:52:04Z"
 }
