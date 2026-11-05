@@ -7,9 +7,15 @@
   "id": "jido-nrd.4",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 09ad111, 79b68e9, 60bd9a6, c84260e. Member and Bus delivery failures now mark last_effect_outcome failed with turn_id nil and keep the owner. No telemetry event for this failure.",
+      "timestamp": "2026-11-05T13:52:03Z"
+    }
+  ],
   "priority": 1,
   "status": "open",
   "title": "Member output delivery failure must not end the topology",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T13:52:03Z"
 }
