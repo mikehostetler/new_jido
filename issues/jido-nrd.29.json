@@ -9,9 +9,15 @@
   "id": "jido-nrd.29",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 1139a7f.",
+      "timestamp": "2026-11-05T12:52:25Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Remove stack frames from Error.to_map class messages",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:22Z"
+  "updated_at": "2026-11-05T12:52:25Z"
 }
