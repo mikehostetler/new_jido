@@ -2,6 +2,7 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-05T12:50:47Z",
   "created": "2026-11-04T23:42:21Z",
   "description": "Load telemetry never reports `revision_after`, because the match expects a 3-tuple and the function returns a 4-tuple.\n\nOwner: `jido.telemetry`\nRoot cause: `lib/jido/telemetry/persistence.ex:42`; `persistence.ex:437-438`\nClaims: storage.B1\nRepro (probe file: id prefix): `20_b_storage`: `storage.B1`\nGuides: `guides/storage/persistence-storage-model.md:197`\n\nDone when: The load stop event carries revision_after for all load functions.\n\nSource: guide-report triage, finding B22. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.22",
@@ -14,7 +15,7 @@
     }
   ],
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Report revision_after on load telemetry",
   "type": "bug",
   "updated_at": "2026-11-05T12:50:47Z"
