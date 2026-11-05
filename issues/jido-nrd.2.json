@@ -7,9 +7,15 @@
   "id": "jido-nrd.2",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 75d54dc. Over-limit request values clamp to the Agent's limit rather than erroring; model, options, context, prompt_cache, stream, output_schema stay request-replaceable.",
+      "timestamp": "2026-11-05T12:42:41Z"
+    }
+  ],
   "priority": 1,
   "status": "open",
   "title": "Protect Agent-level AI policy from request overrides",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T12:42:41Z"
 }
