@@ -7,9 +7,15 @@
   "id": "jido-nrd.8",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Removed in ce63656; :per_turn now gives the invalid-requirement error.",
+      "timestamp": "2026-11-05T12:42:41Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Remove :per_turn or define its terminal condition",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T12:42:41Z"
 }
