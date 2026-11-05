@@ -2,6 +2,7 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-05T12:50:48Z",
   "created": "2026-11-04T23:42:21Z",
   "description": "A `Discovery.refresh/1` before the first scan publishes is overwritten: last writer wins. Run by racing `initialize/1` in a probe, not at a natural boot.\n\nOwner: `jido_action.authoring` (`jido.catalog`)\nRoot cause: `lib/jido/catalog/discovery.ex:61,120`\nClaims: data.B6\nRepro (probe file: id prefix): `10_a_flow_data`: `data.B6`\nGuides: `guides/data/catalog.md:224`\n\nDone when: A refresh before the first scan publishes survives the scan, with a race test.\n\nSource: guide-report triage, finding B27. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.27",
@@ -14,7 +15,7 @@
     }
   ],
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Stop the first Discovery scan overwriting an earlier refresh",
   "type": "bug",
   "updated_at": "2026-11-05T12:50:48Z"
