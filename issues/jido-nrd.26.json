@@ -7,9 +7,15 @@
   "id": "jido-nrd.26",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Text-only in ccad0e5: the after_commit doc matches the code.",
+      "timestamp": "2026-11-05T13:52:03Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Reconcile after_commit failure handling with its doc",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:21Z"
+  "updated_at": "2026-11-05T13:52:03Z"
 }
