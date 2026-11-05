@@ -7,9 +7,15 @@
   "id": "jido-nrd.3",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Text-only per the smallest-fix goal, eaa869d and 6853ceb: start_agent keeps ignoring instance persistence without :inherit, and the docs state it.",
+      "timestamp": "2026-11-05T12:50:47Z"
+    }
+  ],
   "priority": 1,
   "status": "open",
   "title": "Make instance persistence apply to start_agent, or state that it does not",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T12:50:47Z"
 }
