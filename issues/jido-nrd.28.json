@@ -7,9 +7,15 @@
   "id": "jido-nrd.28",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 5c48998.",
+      "timestamp": "2026-11-05T12:50:48Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Make Codec json_schema describe the wire shape",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:21Z"
+  "updated_at": "2026-11-05T12:50:48Z"
 }
