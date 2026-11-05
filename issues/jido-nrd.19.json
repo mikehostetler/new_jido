@@ -7,9 +7,15 @@
   "id": "jido-nrd.19",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 4a0676b.",
+      "timestamp": "2026-11-05T13:52:03Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Reject agent_start name option before commit",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T13:52:03Z"
 }
