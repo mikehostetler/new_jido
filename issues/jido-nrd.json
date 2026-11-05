@@ -2,6 +2,7 @@
   "assignee": "Mike Hostetler",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-05T13:52:04Z",
   "created": "2026-11-04T23:42:19Z",
   "description": "Fix the 38 confirmed library bugs from triaging the guide reports' Possible bugs and Doc conflicts lists, against main at 8b936d9. Each child is one finding, ranked by severity: B01 is S1, B02-B08 are S2, B09-B36 are S3, B37-B38 are S4. Findings document: tmp/guide-reports/triage-findings.md (gitignored, main checkout). Use one worktree per child. Commit the uncommitted guides before a fix edits them. The design questions, doc bundles, and guide corrections in that document are not tracked here.",
   "id": "jido-nrd",
@@ -13,7 +14,7 @@
     }
   ],
   "priority": 1,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Fix library defects from guide triage",
   "type": "epic",
   "updated_at": "2026-11-05T13:52:04Z"
