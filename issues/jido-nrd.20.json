@@ -7,9 +7,15 @@
   "id": "jido-nrd.20",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "No code change: the guide already limits debug to persistence events, which meets the second done-when branch. Reaching Turn events remains undone.",
+      "timestamp": "2026-11-05T12:50:47Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Make instance debug reach Turn and effect events",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T12:50:47Z"
 }
