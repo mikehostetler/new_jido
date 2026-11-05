@@ -2,6 +2,7 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-05T12:50:48Z",
   "created": "2026-11-04T23:42:21Z",
   "description": "`{Jido.Persistence.Ecto, repo: String}` says \"Ecto adapter false is not supported\".\n\nOwner: `jido.persistence`\nRoot cause: `lib/jido/persistence/ecto.ex:181,189-190`\nClaims: storage.B2\nRepro (probe file: id prefix): `20_b_storage`: `storage.B2`\nGuides: none\n\nDone when: repo: String reports that the module is not an Ecto repo.\n\nSource: guide-report triage, finding B34. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.34",
@@ -14,7 +15,7 @@
     }
   ],
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Fix the Ecto adapter error for a non-repo module",
   "type": "bug",
   "updated_at": "2026-11-05T12:50:48Z"
