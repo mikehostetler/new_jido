@@ -2,6 +2,7 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-05T12:50:47Z",
   "created": "2026-11-04T23:42:20Z",
   "description": "`set_debug/2` and instance `debug:` reach only persistence events. A non-durable instance gets no extra logs.\n\nOwner: `jido.telemetry`\nRoot cause: `lib/jido/telemetry/semantic.ex:280`; `telemetry/persistence.ex:31`\nClaims: operations.B1\nRepro (probe file: id prefix): `40_d_operations`: `operations.B1`\nGuides: `guides/operations/telemetry-tracing-and-logs.md`\n\nDone when: set_debug/2 and instance debug: affect Turn and effect events for that instance, or the scope is narrowed in the docs.\n\nSource: guide-report triage, finding B20. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.20",
@@ -14,7 +15,7 @@
     }
   ],
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Make instance debug reach Turn and effect events",
   "type": "bug",
   "updated_at": "2026-11-05T12:50:47Z"
