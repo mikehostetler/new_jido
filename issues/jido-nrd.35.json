@@ -7,9 +7,15 @@
   "id": "jido-nrd.35",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 286bec4, 398eb94.",
+      "timestamp": "2026-11-05T12:50:48Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Correct the Signal extension value error text",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:21Z"
+  "updated_at": "2026-11-05T12:50:48Z"
 }
