@@ -9,9 +9,15 @@
   "id": "jido-nrd.10",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 4ecd560. Rejected in Lifecycle.validate_runtime with ValidationError.",
+      "timestamp": "2026-11-05T12:50:47Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Reject persistent start without a namespace synchronously",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:22Z"
+  "updated_at": "2026-11-05T12:50:47Z"
 }
