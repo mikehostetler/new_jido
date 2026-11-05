@@ -7,9 +7,15 @@
   "id": "jido-nrd.17",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 2787495.",
+      "timestamp": "2026-11-05T12:50:47Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Return an error from list_agents and agent_count on a stopped instance",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T12:50:47Z"
 }
