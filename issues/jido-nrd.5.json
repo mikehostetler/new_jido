@@ -7,9 +7,15 @@
   "id": "jido-nrd.5",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 1afa07e. At most one restart per retry_delay_ms; no count cap, because restart-while-desired is an obligation. First restart after a crash now also waits the delay.",
+      "timestamp": "2026-11-05T12:47:16Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Apply retry delay and a limit to sensor crash restarts",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T12:47:16Z"
 }
