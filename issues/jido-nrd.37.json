@@ -7,9 +7,15 @@
   "id": "jido-nrd.37",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 247c4a0 for input. Flow module output errors still say Action output.",
+      "timestamp": "2026-11-05T12:52:26Z"
+    }
+  ],
   "priority": 3,
   "status": "open",
   "title": "Report Flow context on Flow module input errors",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:21Z"
+  "updated_at": "2026-11-05T12:52:26Z"
 }
