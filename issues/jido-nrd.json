@@ -1,5 +1,5 @@
 {
-  "assignee": "",
+  "assignee": "Mike Hostetler",
   "blocked_by": [],
   "blocks": [],
   "created": "2026-11-04T23:42:19Z",
@@ -7,8 +7,8 @@
   "id": "jido-nrd",
   "labels": [],
   "priority": 1,
-  "status": "open",
+  "status": "in_progress",
   "title": "Fix library defects from guide triage",
   "type": "epic",
-  "updated_at": "2026-11-04T23:42:19Z"
+  "updated_at": "2026-11-05T12:29:24Z"
 }
