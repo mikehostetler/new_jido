@@ -7,9 +7,15 @@
   "id": "jido-nrd.11",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 71d65e2 and the toolset commit on this branch. OpenAI strict mode still requires all fields through ReqLLM. Not tested against a live provider.",
+      "timestamp": "2026-11-05T12:50:48Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Stop listing defaulted fields as required in JSON Schema",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T12:50:48Z"
 }
