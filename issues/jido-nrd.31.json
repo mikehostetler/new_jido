@@ -4,6 +4,7 @@
     "jido-nrd.7"
   ],
   "blocks": [],
+  "closed_at": "2026-11-05T12:47:15Z",
   "created": "2026-11-04T23:42:21Z",
   "description": "Agent validation in `@after_verify` exits from the parallel checker with a stack trace and no file or line. The output-path message does not mention `output_schema`.\n\nOwner: `jido.agent`; `jido.agent_evaluation`\nRoot cause: `lib/jido/agent/dsl.ex:109,116-120`; `agent/route.ex:259-264`\nClaims: start-here.B2, start-here.B3\nRepro (probe file: id prefix): `20_b_start_here`: `start-here.B2`, `start-here.B3`\nGuides: `guides/start-here/first-agent.livemd:80`\n\nDone when: Route validation failures compile to a diagnostic with file and line, and the output-path message names output_schema.\n\nSource: guide-report triage, finding B31. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.31",
@@ -16,7 +17,7 @@
     }
   ],
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Give Agent verify failures a file, a line, and a useful message",
   "type": "bug",
   "updated_at": "2026-11-05T12:47:15Z"
