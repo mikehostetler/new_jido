@@ -2,6 +2,7 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-05T13:52:03Z",
   "created": "2026-11-04T23:42:20Z",
   "description": "`agent_start(..., opts: %{name: ...})` passes pre-commit validation, the parent commits, and no child starts. Only `last_effect_outcome` shows it.\n\nOwner: `jido.agent_server.effects`\nRoot cause: `lib/jido/agent_server/effects.ex:216,251`; `topology.ex:508`\nClaims: agent-servers.B5\nRepro (probe file: id prefix): `20_b_agent_servers`: `agent-servers.B5`\nGuides: none\n\nDone when: agent_start with opts name fails before the parent commits, or starts the child.\n\nSource: guide-report triage, finding B19. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.19",
@@ -14,7 +15,7 @@
     }
   ],
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Reject agent_start name option before commit",
   "type": "bug",
   "updated_at": "2026-11-05T13:52:03Z"
