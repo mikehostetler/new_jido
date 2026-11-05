@@ -4,6 +4,7 @@
   "blocks": [
     "jido-nrd.10"
   ],
+  "closed_at": "2026-11-05T13:52:04Z",
   "created": "2026-11-04T23:42:20Z",
   "description": "`await_ready/2` exits instead of returning `{:error, _}`, against its `@spec`. A failed start loses its reason in 12-25% of runs: `:noproc` or `{:error, :worker_unavailable}` in place of `:not_found`, `:conflict`, or `:deleted`. Rerun thaw of 200: `:not_found` 153, `:noproc` 30, `:worker_unavailable` 17. Also a definite SQL error reports as `:indeterminate`.\n\nOwner: `jido.agent_server.activation`\nRoot cause: `lib/jido/agent_server.ex:743-744`; `lib/jido/agent_server/supervisor.ex:118-126`\nClaims: agent-servers.B2, agent-servers.B3, durability.B1, built-in-plugins.B1, composition.B4, storage.B3 (table part)\nRepro (probe file: id prefix): `02_start_agent`: `N5`; `20_b_agent_servers`: `agent-servers.B2`; `20_b_durability`: `durability.B1`; `MIX_ENV=test 20_b_storage_ecto`: `storage.B3`\nGuides: `guides/agent-servers/hibernate-thaw-and-activate.md`; `guides/durability/deletion-and-tombstones.md`; `guides/built-in-plugins/signal-bus-plugin.livemd:255`\n\nDone when: await_ready/2 matches its @spec, and a failed start reports its real reason in every run of a repeated race test.\n\nSource: guide-report triage, finding B09. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.9",
@@ -16,7 +17,7 @@
     }
   ],
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Make await_ready return errors and keep the failed-start reason",
   "type": "bug",
   "updated_at": "2026-11-05T13:52:04Z"
