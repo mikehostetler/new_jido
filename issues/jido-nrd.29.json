@@ -4,6 +4,7 @@
     "jido-nrd.1"
   ],
   "blocks": [],
+  "closed_at": "2026-11-05T12:52:25Z",
   "created": "2026-11-04T23:42:21Z",
   "description": "`Jido.Error.to_map/1` on a class error puts stack frames with paths in `:message`, against its doc. Only from `to_class/1`, which nothing in `lib/` calls.\n\nOwner: `jido.error`\nRoot cause: `lib/jido/error.ex:697,735`\nClaims: data.B1, data.D4\nRepro (probe file: id prefix): `10_a_data`: `data.B1`\nGuides: none\n\nDone when: to_map on a class error has no stack frames in :message.\n\nSource: guide-report triage, finding B29. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.29",
@@ -16,7 +17,7 @@
     }
   ],
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Remove stack frames from Error.to_map class messages",
   "type": "bug",
   "updated_at": "2026-11-05T12:52:25Z"
