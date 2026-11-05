@@ -7,9 +7,15 @@
   "id": "jido-nrd.13",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 094817d by a guard: untargeted self-emit chains stop at 32 hops with :self_emit_limit. Loops through connections or parents are not covered. The limit of 32 is an unconfirmed choice.",
+      "timestamp": "2026-11-05T13:52:03Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Guard or remove the Emit self-cast fallback",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T13:52:03Z"
 }
