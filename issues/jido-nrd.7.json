@@ -4,6 +4,7 @@
   "blocks": [
     "jido-nrd.31"
   ],
+  "closed_at": "2026-11-05T12:47:15Z",
   "created": "2026-11-04T23:42:20Z",
   "description": "- **Claim:** composition.B1\n- **Owner:** `jido.agent`\n- **Observed:** a module listing itself, or two modules listing each other, never finishes `Kernel.ParallelCompiler.compile/2`. The hot stack is `Jido.Agent.Validation.define/2` → `DSL.definition!/1` → `Topology.related/3:221` → `Topology.nested/3` → `Topology.member/4`, below `@after_verify {Jido.Agent.DSL, :verify!}` (`lib/jido/agent/dsl.ex:109`). The elixir checker is stuck, so there is no error at all.\n- **Cause:** `lib/jido/agent/topology.ex:216-221` keeps a `seen` list and has a `:recursive_membership` error, but it calls `module.definition()`, which re-enters `Validation.define` with a fresh `seen`. The guard can never fire.\n- **Repro** (10 s per case, then prints the stack):\n\n```bash\nmix run --no-compile tmp/guide-reports/probes/01c_self_member.exs 2\u003e\u00261 | grep -a -A9 '^N4'\n```\n\n- **Guide:** the cycle warning in the composition tutorial can stay, reworded to name the compile error.\n- **Proposed task (P1):** \"Report cyclic topology membership at compile time\". Done when self and mutual cycles give a `:recursive_membership` error with a file and line.\n\nSource: guide-report triage, finding B07. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.7",
@@ -16,7 +17,7 @@
     }
   ],
   "priority": 1,
-  "status": "open",
+  "status": "closed",
   "title": "Report cyclic topology membership at compile time",
   "type": "bug",
   "updated_at": "2026-11-05T12:47:15Z"
