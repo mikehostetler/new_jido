@@ -9,9 +9,15 @@
   "id": "jido-nrd.7",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 3680bcf. Self and mutual cycles raise CompileError with :recursive_membership. A cycle through a hand-written module with only definition/0 is not guarded.",
+      "timestamp": "2026-11-05T12:47:15Z"
+    }
+  ],
   "priority": 1,
   "status": "open",
   "title": "Report cyclic topology membership at compile time",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:22Z"
+  "updated_at": "2026-11-05T12:47:15Z"
 }
