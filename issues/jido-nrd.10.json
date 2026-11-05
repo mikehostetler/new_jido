@@ -4,6 +4,7 @@
     "jido-nrd.9"
   ],
   "blocks": [],
+  "closed_at": "2026-11-05T12:50:47Z",
   "created": "2026-11-04T23:42:20Z",
   "description": "`start_agent(persistence: :inherit)` or an explicit store with no namespace returns `{:ok, pid}`, then exits `{:shutdown, :stable_namespace_required}`. It can be rejected synchronously, as unknown options already are.\n\nOwner: `jido.agent_server.activation`\nRoot cause: `lib/jido/persistence.ex:429` is reached only from the worker\nClaims: reference.B1, storage.B3 (namespace), start-agent item\nRepro (probe file: id prefix): `02_start_agent`: `N5.missing_namespace`\nGuides: `guides/storage/ecto-persistence.md:52`; `guides/reference/configuration-reference.md`\n\nDone when: start_agent with persistence and no namespace returns an error tuple and starts no worker.\n\nSource: guide-report triage, finding B10. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.10",
@@ -16,7 +17,7 @@
     }
   ],
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Reject persistent start without a namespace synchronously",
   "type": "bug",
   "updated_at": "2026-11-05T12:50:47Z"
