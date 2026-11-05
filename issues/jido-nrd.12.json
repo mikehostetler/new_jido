@@ -7,9 +7,15 @@
   "id": "jido-nrd.12",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 96e956d for decode. encode still raises; a test pins it and the ticket covers decode.",
+      "timestamp": "2026-11-05T12:50:48Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Make Codec decode honour its spec during Discovery boot",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T12:50:48Z"
 }
