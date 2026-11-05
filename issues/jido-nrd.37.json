@@ -2,6 +2,7 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-05T12:52:26Z",
   "created": "2026-11-04T23:42:21Z",
   "description": "A Flow *module's* input error has `details.context == \"Action\"`. A `%Jido.Flow{}` gives `\"Flow\"`.\n\nOwner: `jido_action.action` (`jido.action`)\nRoot cause: `lib/jido/action.ex:84`\nClaims: actions.B5\nRepro (probe file: id prefix): `10_a_actions`: `actions.B5`\n\nDone when: A Flow module input error has details.context \"Flow\".\n\nSource: guide-report triage, finding B37. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.37",
@@ -14,7 +15,7 @@
     }
   ],
   "priority": 3,
-  "status": "open",
+  "status": "closed",
   "title": "Report Flow context on Flow module input errors",
   "type": "bug",
   "updated_at": "2026-11-05T12:52:26Z"
