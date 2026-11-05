@@ -7,9 +7,15 @@
   "id": "jido-nrd.38",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 5b369e7.",
+      "timestamp": "2026-11-05T12:47:16Z"
+    }
+  ],
   "priority": 3,
   "status": "open",
   "title": "Report the owning Plugin in state owner violations",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:21Z"
+  "updated_at": "2026-11-05T12:47:16Z"
 }
