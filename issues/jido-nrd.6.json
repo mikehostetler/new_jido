@@ -2,6 +2,7 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-05T12:52:25Z",
   "created": "2026-11-04T23:42:20Z",
   "description": "- **Claims:** flow-data.B1, reference.B2\n- **Owner:** `jido_action.flow` (`jido.flow`)\n- **Observed:** `Protocol.UndefinedError: protocol Enumerable not implemented for Zoi.Types.Map`. `validate/1`, `dependencies/1`, `semantic_identity/1`, and execution all work. `Jido.Flow.explain(Jido.AI.Reasoning.ReAct.flow())` raises too.\n- **Cause:** `lib/jido/flow/value.ex:119`, where `to_map(%{} = map)` also matches structs and calls `Map.new` on the state schema.\n- **Repro:**\n\n```bash\nmix run --no-compile tmp/guide-reports/probes/01_named.exs 2\u003e\u00261 | grep -a '^N2'\n```\n\n- **Guide:** remove the warning at `guides/flow-data/flow-inspection.md:127`.\n- **Proposed task (P1, small):** \"Fix Flow.to_map and explain for iterate state schemas\". Done when both return for an Iterate Flow and for the ReAct Flow, with a decided representation for the schema.\n\nSource: guide-report triage, finding B06. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.6",
@@ -14,7 +15,7 @@
     }
   ],
   "priority": 1,
-  "status": "open",
+  "status": "closed",
   "title": "Fix Flow.to_map and explain for iterate state schemas",
   "type": "bug",
   "updated_at": "2026-11-05T12:52:25Z"
