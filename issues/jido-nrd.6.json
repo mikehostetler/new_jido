@@ -7,9 +7,15 @@
   "id": "jido-nrd.6",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 3e7b687. Schemas stay Joi values in to_map.",
+      "timestamp": "2026-11-05T12:52:25Z"
+    }
+  ],
   "priority": 1,
   "status": "open",
   "title": "Fix Flow.to_map and explain for iterate state schemas",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T12:52:25Z"
 }
