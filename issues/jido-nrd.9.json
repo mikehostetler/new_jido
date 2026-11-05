@@ -9,9 +9,15 @@
   "id": "jido-nrd.9",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 443efef, b835ee4, 7ef33f8, 948f99f, a702dd8, 7506b49. Gaps: :plugin_start_failed and bootstrap timeouts record no reason; 1,024 slots can evict a reason and fall back to :noproc; a dead server addressed by name gives :noproc. Definite SQL errors cover missing table or column only, and Postgres was tested with a fake repo.",
+      "timestamp": "2026-11-05T13:52:04Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Make await_ready return errors and keep the failed-start reason",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:22Z"
+  "updated_at": "2026-11-05T13:52:04Z"
 }
