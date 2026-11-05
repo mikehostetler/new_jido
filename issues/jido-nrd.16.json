@@ -7,9 +7,15 @@
   "id": "jido-nrd.16",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Text-only in 6568e50: the doc now states :not_waiting after success.",
+      "timestamp": "2026-11-05T13:52:03Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Make deliver_wait retry after success match its doc",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T13:52:03Z"
 }
