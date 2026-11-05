@@ -2,6 +2,7 @@
   "assignee": "",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-05T12:50:48Z",
   "created": "2026-11-04T23:42:20Z",
   "description": "`Jido.Codec.decode_json/2` and `decode/2` raise `InternalError \"Catalog is not initialized\"` for 2-3 s after boot, despite an `{:ok, _} \\| {:error, issues}` spec, even with explicit `:catalog`.\n\nOwner: `jido_action.authoring` (`jido.codec`)\nRoot cause: `lib/jido/codec.ex:80,142`; `lib/jido/catalog/discovery.ex:353`\nClaims: flow-runtime.B4, flow-data.D2, flow-runtime.D3\nRepro (probe file: id prefix): `10_a_flow_data`: `flow-runtime.B4`\nGuides: `guides/flow-data/flow-storage.md:175`; `guides/data/catalog.md:166`\n\nDone when: decode and decode_json return their documented result before Discovery finishes, or the spec and docs state the raise.\n\nSource: guide-report triage, finding B12. Reproduction probes are gitignored and exist only in the main checkout under tmp/guide-reports/probes/. Full evidence: tmp/guide-reports/triage-findings.md and probes/results-*.md. Add a test and any contract change in this change, and remove or correct the listed guide text. The guides must be committed before a fix edits them.",
   "id": "jido-nrd.12",
@@ -14,7 +15,7 @@
     }
   ],
   "priority": 2,
-  "status": "open",
+  "status": "closed",
   "title": "Make Codec decode honour its spec during Discovery boot",
   "type": "bug",
   "updated_at": "2026-11-05T12:50:48Z"
