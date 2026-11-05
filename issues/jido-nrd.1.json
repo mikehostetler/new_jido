@@ -9,9 +9,15 @@
   "id": "jido-nrd.1",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in db96a6a. Logger level :error in the applying process, lifted around Action code and telemetry spans. Tradeoff: Runic's other warnings and low-level logs from Joi refinements on Flow-owned schemas are also dropped there, and a failed Exec.start logs nothing.",
+      "timestamp": "2026-11-05T12:52:25Z"
+    }
+  ],
   "priority": 1,
   "status": "open",
   "title": "Stop failed Exec runs logging params, context, and error values",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:22Z"
+  "updated_at": "2026-11-05T12:52:25Z"
 }
