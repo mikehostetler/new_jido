@@ -7,9 +7,15 @@
   "id": "jido-nrd.14",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in 56aa272. Residual gap: OTP passes stacktraces through, so a FunctionClauseError in a private function can still print arguments including state. The security guide says so.",
+      "timestamp": "2026-11-05T13:52:03Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Add format_status to AgentServer to keep state out of crash reports",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T13:52:03Z"
 }
