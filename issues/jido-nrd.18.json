@@ -7,9 +7,15 @@
   "id": "jido-nrd.18",
   "labels": [],
   "parent": "jido-nrd",
+  "comments": [
+    {
+      "text": "Fixed in e6ab24e.",
+      "timestamp": "2026-11-05T12:50:47Z"
+    }
+  ],
   "priority": 2,
   "status": "open",
   "title": "Fix the partition option on Jido.hibernate",
   "type": "bug",
-  "updated_at": "2026-11-04T23:42:20Z"
+  "updated_at": "2026-11-05T12:50:47Z"
 }
